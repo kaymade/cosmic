@@ -1,0 +1,494 @@
+/* .𖥔 ݁ ˖   ✦    ‧₊˚ ⋅ Cosmic - A Theme for Obsidian .𖥔 ݁ ˖   ✦    ‧₊˚ ⋅ */
+
+/* @settings
+name: Cosmic
+id: cosmic-theme-settings
+settings:
+  - id: cosmic-color-heading
+  title: Palette Options
+  type: heading
+  level: 1
+  collapsed: false
+
+  - id: cosmic-color-scheme
+  title: Mood
+  description: Choose a coordinated palette. Every mood includes its own light and dark mode versions. 
+  type: class-select
+  allowempty: false
+  default: cosmic-scheme-original
+  options:
+    - label: Cosmic (original)
+    value: cosmic-scheme-original
+    - label: Red Dwarf
+    value: cosmic-scheme-red-dwarf
+    - label: Blue Blob
+    value: cosmic-scheme-blue-blob
+    - label: Aurora
+    value: cosmic-scheme-aurora
+    - label: Eclipse
+    value: cosmic-scheme-eclipse
+    - label: Stardust
+    value: cosmic-scheme-stardust
+    - label: Comet
+    value: cosmic-scheme-comet
+
+  - id: cosmic-custom-color-heading
+  title: Custom Accent Colors
+  type: heading
+  level: 2
+  collapsed: true
+
+  - id: cosmic-accent
+  title: Main Accent
+  type: variable-color
+  default: "#b4797f"
+  format: hex
+
+  - id: cosmic-accent-hover
+  title: Accent Hover
+  type: variable-color
+  default: "#c57e89"
+  format: hex
+
+  - id: cosmic-h1-color
+  title: Heading 1 Color
+  type: variable-color
+  default: "#dda2a1"
+  format: hex
+
+  - id: cosmic-h2-color
+  title: Headin 2 Color
+  type: variable-color
+  default: "#97c7dc"
+  format: hex
+
+  - id: cosmic-h3-color
+  title: Heading 3 Color
+  default: "#d8c2e3"
+  format: hex
+
+  - id: cosmic-info
+  title: Cosmic Theme Settings
+  description: Tune typography, note surfaces, spacing, colors, and decorative details for Cosmic.
+  type: info-text
+  markdown: false
+
+  - id: cosmic-typography-heading
+  title: Typography
+  type: heading
+  level: 1
+  collapsed: false
+
+  - id: cosmic-body-font
+  title: Body font
+  type: class-select
+  allowempty: false
+  default: cosmic-body-tirra
+  options:
+    - label: Tirra
+    value: cosmic-body-tirra
+    - label: Source Serif 4
+    value: cosmic-body-source-serif
+    - label: Georgia
+    value: cosmic-body-georgia
+
+  - id: cosmic-display-font
+  title: Display Font
+  type: class-select
+  allowempty: false
+  default: cosmic-display-yeseva
+  options:
+    - label: Yeseva One
+    value: cosmic-display-yeseva
+    - label: Cormorant Garamond
+    value: cosmic-display-coromorant
+    - label: Georgia
+    value: cosmic-display-georgia
+
+  - id: cosmic-heading-style
+  title: Heading Style
+  type: class-select
+  allowempty: false
+  default: cosmic-headings-ornate
+  options:
+    - label: Ornate
+    value: cosmic-headings-ornate
+    - label: Minimal
+    value: cosmic-headings-minimal
+    - label: Loud
+    value: cosmic-headings-loud
+
+  - id: cosmic-layout-heading
+  title: Layour
+  type: heading
+  level: 1
+  collapsed: false
+
+  - id: file-line-width
+  title: Note Width
+  description: Main reading and editing line width
+  type: variable-number
+  default: 760
+  min: 520
+  max: 1100
+  step: 10
+  format: px
+
+  - id: radius-m
+  title: Medium Radius
+  type: variable-number
+  default: 7
+  min: 0
+  max: 22
+  step: 1
+  format: px
+
+  -id: radius-l
+  title: Large Radius
+  type: variable-number
+  default: 10
+  min: 0
+  max: 28
+  step: 1
+  format: px
+
+  - id: input-radius
+  title: Input Radius
+  type: variable-number
+  default: 6
+  min: 0
+  max: 20
+  step: 1
+  format: px
+
+  - id: cosmic-density
+  title: Interface Density
+  type: class-select
+  allowempty: false
+  default: cosmic-density-cozy
+  options: 
+    - label: Cozy
+    value: cosmic-density-cozy
+    - label: Compact
+    value: cosmic-density-compact
+    - label: Airy
+    value: cosmic-density-airy
+
+  - id: cosmic-surfaces-heading
+  title: Surfaces
+  type: heading
+  level: 1
+  collapsed: false
+
+  - id: cosmic-pane-style
+  title: Note pane style
+  type: class-select
+  allowempty: false
+  default: cosmic-pane-glow-medium
+  options:
+    - label: Soft
+    value: cosmic-pane-flow-soft
+    - label: Medium
+    value: cosmic-pane-glow-medium
+    - label: Rich
+    value: cosmic-pane-glow-rich
+    - label: Flat
+    value: cosmic-pane-glow-flat
+
+  - id: cosmic-note-glow
+  title: Note Glow Color
+  type: variable-color
+  default: "#f4bbc3"
+  format: hex
+
+  - id: cosmic-pane-edge
+  title: Pane Edge Color
+  type: variable-color
+  default: "#f4bbc3"
+  format: hex
+
+  - id: cosmic-pane-border
+  title: Pane Border Style
+  type: class-select
+  allowempty: false
+  default: cosmic-pane-border-soft
+  options:
+    - label: None
+    value: cosmic-pane-border-none
+    - label: Soft
+    value: cosmic-pane-border-soft
+    - label: Strong
+    value: cosmic-pane-border-strong
+
+  - id: cosmic-sidebar-contrast
+  title: Sidebar Contrast
+  type: class-select
+  allowempty: false
+  default: cosmic-sidebar-muted
+  options:
+    - label: Muted
+    value: cosmic-sidebar-muted
+    - label: Separated
+    value: cosmic-sidebar-separated
+    -label: Deep (Dark Mode Only)
+    value: cosmic-sidebar-deep
+
+  - id: cosmic-extras-heading
+  title: Extras
+  type: heading
+  level: 1
+  collapsed: true
+
+  - id: cosmic-callouts
+  title: Callouts
+  type: class-select
+  allowempty: false
+  default: cosmic-callouts-soft
+  options:
+    - label: Soft
+    value: cosmic-callouts-soft
+    - label: Solid
+    value: cosmic-callouts-solid
+    - label: Outlined
+    value: cosmic-callouts-outline
+
+  - id: cosmic-statusbar
+  title: Status Bar
+  type: class-select
+  allowempty: false
+  default: cosmic-statusbar-default
+  options:
+    - label: Default
+    value: cosmic-statusbar-default
+    - label: Pill
+    value: cosmic-statusbar-pill
+    - label: Minimal
+    value: cosmic-statusbar-minimal
+*/
+
+/* base color palette */
+
+body {
+  --void: #010107;
+  --black: #020412;
+  --abyss: #03071d;
+  --night: #040829;
+  --midnight: #061135;
+  --deep: #061240;
+  --navy: #111341;
+  --ink: #201b43;
+
+  --cove: #051c36;
+  --harbor: #061d41;
+  --marine: #07294d;
+  --bay: #113659;
+  --blue: #30506f;
+  --slate: #5a6a7f;
+  --teal: #4e717d;
+  --aqua: #7bc2d8;
+
+  --plum: #291236;
+  --grape: #351e4d;
+  --violet: #3a2e5f;
+  --iris: #412a65;
+  --orchid: #593670;
+  --amethyst: #714271;
+  --lavender: #b8a5cc;
+  --lilac: #d8c2e3;
+
+  --wine: #411e42;
+  --berry: #5f314f;
+  --mulberry: #7e4265;
+  --mauve: #8b526c;
+  --raspberry: #a14f71;
+  --rose: #b4797f;
+  --blush: #d29596;
+  --petal: #dda2a1;
+
+  --shell: #ead6d7;
+  --pearl: #f4ebec;
+  --foam: #e8f3f4;
+  --cloud: #ecedf4;
+  --milk: #f6f4f4;
+  --cream: #f2def2;
+  --peach: #f3cade;
+  --cotton: #fffced;
+
+  --bronze: #81529c;
+  --ochre: #975ab5;
+  --honey: #b06bc1;
+  --butter: #cc8dc7;
+  --gold: #e0b2e8;
+  --glint: #f3d8f6;
+  --moon: #fef5e0;
+  --spark: #faeaff;
+
+  --heart: #ad5a72;
+  --coral: #f4bbc3;
+  --sky: #97c7dc;
+  --mist: #8e8392;
+  --smoke: #724d71;
+  --dusk: #423471;
+  --ember: #c57e89;
+  --star: #cc8dc7;
+}
+
+/* default color selections */
+
+body {
+  --cosmic-accent: var(--rose);
+  --cosmic-accent-hover: var(--ember);
+
+  --cosmic-h1-color: var(--petal);
+  --cosmic-h2-color: var(--sky);
+  --cosmic-h3-color: var(--lilac);
+
+  --cosmic-note-glow: var(--coral);
+  --cosmic-pane-edge: var(--coral);
+}
+
+/* Cosmic - Original/Dark */
+
+.theme-dark {
+  --background-primary: color-mix(in srgb, var(--abyss) 82%, var(--iris));
+  --background-primary-alt: color-mix(in srgb, var(--black) 88%, var(--grape));
+  --background-secondary: var(--background-primary);
+  --background-secondary-alt: var(--background-primary-alt);
+
+  --background-modifier-hover: color-mix(in srgb, var(--mauve) 22%, transparent);
+  --background-modifier-active-hover: color-mix(in srgb, var(--teal) 24%, transparent);
+  --background-modifier-border: color-mix(in srgb, var(--mist) 22%, transparent);
+  --background-modifier-border-hover: color-mix(in srgb, var(--gold) 42%, transparent);
+  --background-modifier-border-focus: var(--agua);
+  --background-modifier-error: var(--heart);
+  --background-modifier-success: var(--teal);
+  --background-modifier-form-field: color-mix(in srgb, var(--void) 76%, transparent);
+
+  --text-normal: var(--pearl);
+  --text-muted: var(--lavender);
+  --text-faint: var(--mist);
+  --text-accent: var(--gold);
+  --text-accent-hover: var(--glint);
+  --text-on-accent: var(--plum);
+  --text-selection: color-mix(in srgb, var(--butter) 32%, transparent);
+  --text-highlight-bg: color-mix(in srgb, var(--honey) 34%, transparent);
+  --text-error: var(--coral);
+  --text-success: var(--agua);
+
+  --interactive-normal: var(--navy);
+  --interactive-hover: var(--dusk);
+  --interactive-accent: var(--cosmic-accent);
+  --interactive-accent-hover: var(--cosmic-accent-hover);
+  --interactive-accent-rgb: 180, 121, 127;
+
+  --h1-color: var(--cosmic-h1-color);
+  --h2-color: var(--cosmic-h2-color);
+  --h3-color: var(--cosmic-h3-color);
+  --h4-color: var(--sky);
+  --h5-color: var(--lilac);
+  --h6-color: var(--cream);
+
+  --link-color: #e0b2e8;
+  --link-color-hover: #f3d8f6;
+  --link-external-color: #f0b4da;
+  --link-external-color-hover: #faeaff;
+
+  --tag-color: var(--peach);
+  --tag-background: color-mix(in srgb, var(--mulberry) 40%, transparent);
+  --tag-background-hover: color-mix(in srgb, var(--rose) 44%, transparent);
+
+  --titlebar-background: var(--background-primary);
+  --titlebar-background-focused: var(--background-primary-alt);
+  --tab-container-background: var(--background-primary);
+  --tab-outline-color: color-mix(in srgb, var(--slate) 28%, transparent);
+  --tab-text-color-focused-active-current: var(--milk);
+  --nav-item-color-active: var(--cotton);
+  --nav-item-background-active: color-mix(in srgb, var(--orchid) 36%, transparent);
+  --ribbon-background: var(--background-primary);
+
+  --scrollbar-thumb-bg: color-mix(in srgb, var(--smoke) 62%, transparent);
+  --scrollbar-active-thumb-bg: color-mix(in srgb, var(--star) 70%, transparent);
+
+  --blockquote-border-color: var(--rose);
+
+  --code-background: color-mix(in srgb, var(--void) 62%, var(--cove));
+  --code-normal: var(--shell);
+
+  --table-header-background: color-mix(in srgb, var(--violet) 72%, var(--marine));
+  --table-row-alt-background: color-mix(in srgb, var(--bay) 26%, transparent);
+  --table-border-color: color-mix(in srgb, var(--mist) 24%, transparent);
+}
+
+/* Cosmic - Original/Light */
+
+.theme-light {
+  --background-primary: color-mix(in srgb, var(--cloud) 72%, var(--lilac));
+  --background-primary-alt: color-mix(in srgb, var(--pearl) 78%, var(--lavender));
+  --background-secondary: var(--background-primary);
+  --background-secondary-alt: var(--background-primary-alt);
+
+  --background-modifier-hover: color-mix(in srgb, var(--rose) 18%, transparent);
+  --background-modifier-active-hover: color-mix(in srgb, var(--sky) 25%, transparent);
+  --background-modifier-border: color-mix(in srgb, var(--smoke) 24%, transparent);
+  --background-modifier-border-hover: color-mix(in srgb, var(--berry) 36%, transparent);
+  --background-modifier-border-focus: var(--teal);
+  --background-modifier-error: var(--coral);
+  --background-modifier-error-hover: var(--ember);
+  --background-modifier-success: var(--foam);
+  --background-modifier-form-field: color-mix(in srgb, var(--cotton) 82%, transparent);
+
+  --text-normal: var(--ink);
+  --text-muted: var(--smoke);
+  --text-faint: var(--mist);
+  --text-accent: var(--berry);
+  --text-accent-hover: var(--plum);
+  --text-on-accent: var(--cotton);
+  --text-selection: color-mix(in srgb, var(--glint) 62%, transparent);
+  --text-highlight-bg: color-mix(in srgb, var(--spark) 74%, transparent);
+  --text-error: var(--raspberry);
+  --text-success: var(--bay);
+
+  --interactive-normal: var(--pearl);
+  --interactive-hover: var(--shell);
+  --interactive-accent: var(--cosmic-accent);
+  --interactive-accent-hover: var(--cosmic-accent-hover);
+  --interactive-accent-rgb: 139, 82, 108;
+
+  --h1-color: var(--cosmic-h1-color);
+  --h2-color: var(--cosmic-h2-color);
+  --h3-color: var(--cosmic-h3-color);
+  --h4-color: var(--blue);
+  --h5-color: var(--iris);
+  --h6-color: var(--ochre);
+
+  --link-color: var(--orchid);
+  --link-color-hover: var(--berry);
+  --link-external-color: var(--mauve);
+  --link-external-color-hover: var(--raspberry);
+
+  --tag-color: var(--wine);
+  --tag-background: color-mix(in srgb, var(--blush) 34%, transparent);
+  --tag-background-hover: color-mix(in srgb, var(--petal) 48%, transparent);
+
+  --titlebar-background: var(--background-primary);
+  --titlebar-background-focused: var(--background-primary-alt);
+  --tab-container-background: var(--background-primary);
+  --tab-outline-color: color-mix(in srgb, var(--slate) 24%, transparent);
+  --tab-text-color-focused-active-current: var(--plum);
+  --nav-item-color-active: var(--grape);
+  --nav-item-background-active: color-mix(in srgb, var(--lilac) 42%, transparent);
+  --ribbon-background: var(--background-primary);
+
+  --scrollbar-thumb-bg: color-mix(in srgb, var(--mauve) 38%, transparent);
+  --scrollbar-active-thumb-bg: color-mix(in srgb, var(--honey) 56%, transparent);
+
+  --blockquote-border-color: var(--mauve);
+
+  --code-background: color-mix(in srgb, var(--cloud) 70%, var(--pearl));
+  --code-normal: var(--grape);
+
+  --table-header-background: color-mix(in srgb, var(--peach) 60%, var(--shell));
+  --table-row-alt-background: color-mix(in srgb, var(--foam) 55%, transparent);
+  --table-border-color: color-mix(in srgb, var(--slate) 20%, transparent);
+}
+
