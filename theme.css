@@ -1,4 +1,8 @@
-/* .𖥔 ݁ ˖   ✦    ‧₊˚ ⋅ Cosmic - A Theme for Obsidian .𖥔 ݁ ˖   ✦    ‧₊˚ ⋅ */
+/*                                                              .𖥔 ݁ ˖   ✦    ‧₊˚ ⋅ Cosmic - A Theme for Obsidian .𖥔 ݁ ˖   ✦    ‧₊˚ ⋅ 
+                                                              .𖥔 ݁ ˖   ✦    ‧₊˚ ⋅ Inspired by the painted night sky .𖥔 ݁ ˖   ✦    ‧₊˚ ⋅
+                                  .𖥔 ݁ ˖   ✦    ‧₊˚ ⋅ This theme features a coordinated light and dark mode, with expressive moods, typography, and headings .𖥔 ݁ ˖   ✦    ‧₊˚ ⋅
+                                      .𖥔 ݁ ˖   ✦    ‧₊˚ ⋅ Extensive Style Settings controls for colors, fonts, spacing, density, and details. .𖥔 ݁ ˖   ✦    ‧₊˚ ⋅
+*/
 
 /* @settings
 name: Cosmic
@@ -492,3 +496,316 @@ body {
   --table-border-color: color-mix(in srgb, var(--slate) 20%, transparent);
 }
 
+/* Red Dwarf */
+
+body.cosmic-scheme-red-dwarf.theme-dark {
+  --background-primary: #16091d;
+  --background-primary-alt: #0c0714;
+  --background-secondary: #1d0d25;
+  --background-secondary-alt: #12091a;
+
+  --text-normal: #f8e9ef;
+  --text-muted: #d9b3c7;
+  --text-faint: #9b7088;
+
+  --cosmic-accent: #d26f9d;
+  --cosmic-accent-hover: #ee91b7;
+  --interactive-accent-rgb: 210, 111, 157;
+
+  --cosmic-h1-color: #f2a7c4;
+  --cosmic-h2-color: #d7b1e8;
+  --cosmic-h3-color: #f1c58f;
+  --h4-color: #9dcce0;
+  --h5-color: #c89add;
+  --h6-color: #f6d7df;
+
+  --text-accent: #f0a6c6;
+  --text-accent-hover: #ffd5e5;
+
+  --link-color: #e9a5d6;
+  --link-color-hover: #ffd6ee;
+
+  --tag-color: #ffd8e7;
+  --tag-background: rgba(169, 65, 115, 0.36);
+
+  --blockquote-border-color: #d26f9d;
+
+  --code-background: #210e28;
+  --table-header-background: #402040;
+
+  --cosmic-note-glow: #ed8caf;
+  --cosmic-pane-edge: #d26f9d;
+}
+
+body.cosmic-scheme-red-dwarf.theme-light {
+  --background-primary: #fff2f6;
+  --background-primary-alt: #f8e5ee;
+  --background-secondary: #fceaf2;
+  --background-secondary-alt: #f3dce8;
+
+  --text-normal: #402337;
+  --text-muted: #795168;
+  --text-faint: #a47c91;
+
+  --cosmic-accent: #a84373;
+  --cosmic-accent-hover: #7f2f59;
+  --interactive-accent-rgb: 168, 67, 115;
+
+  --cosmic-h1-color: #97375f;
+  --cosmic-h2-color: #76518f;
+  --cosmic-h3-color: #9a6039;
+  --h4-color: #39728a;
+  --h5-color: #714271;
+  --h6-color: #8d5b35;
+
+  --text-accent: #96375f;
+  --text-accent-hover: #67213f;
+
+  --link-color: #8c3970;
+  --link-color-hover: #63234d;
+
+  --tag-color: #6c294c;
+  --tag-background: rgba(216, 132, 166, 0.28);
+
+  --blockquote-border-color: #bd5a85;
+
+  --code-background: #f7dfeb;
+  --table-header-background: #efd0df;
+
+  --cosmic-note-glow: #dc789e;
+  --cosmic-pane-edge: #bd5a85;
+}
+
+/* Blue Blob */
+
+body.cosmic-scheme-blue-blob.theme-dark {
+  --background-primary: #04111f;
+  --background-primary-alt: #020914;
+  --background-secondary: #071a2d;
+  --background-secondary-alt: #04101f;
+
+  --background-modifier-hover: rgba(54, 152, 210, 0.2);
+  --background-modifier-active-hover: rgba(73, 190, 220, 0.27);
+  --background-modifier-border: rgba(125, 185, 221, 0.23);
+  --background-modifier-border-hover: rgba(90, 205, 235, 0.46);
+  --background-modifier-border-focus: #5ad1e7;
+  --background-modifier-error: #e4779d;
+  --background-modifier-error-hover: #f19ab6;
+  --background-modifier-success: #64d9c7;
+  --background-modifier-form-field: rgba(2, 15, 29, 0.78);
+
+  --text-normal: #eaf7ff;
+  --text-muted: #a9cce1;
+  --text-faint: #6f91aa;
+  --text-accent: #6ed5f0;
+  --text-accent-hover: #b9edff;
+  --text-on-accent: #031421;
+  --text-selection: rgba(84, 181, 229, 0.34);
+  --text-highlight-bg: rgba(101, 213, 229, 0.28);
+  --text-error: #f19ab6;
+  --text-success: #75dfd0;
+
+  --cosmic-accent: #359bd0;
+  --cosmic-accent-hover: #59c4e1;
+  --interactive-accent-rgb: 53, 155, 208;
+
+  --interactive-normal: #0c2840;
+  --interactive-hover: #123c5c;
+
+  --cosmic-h1-color: #6ecbed;
+  --cosmic-h2-color: #8fa9f4;
+  --cosmic-h3-color: #bda0ec;
+  --h4-color: #64d9d0;
+  --h5-color: #d19bdc;
+  --h6-color: #dcefff;
+
+  --link-color: #72c7f4;
+  --link-color-hover: #b7e7ff;
+  --link-external-color: #9aa7f5;
+  --link-external-color-hover: #d0d5ff;
+
+  --tag-color: #d9f5ff;
+  --tag-background: rgba(34, 126, 179, 0.4);
+  --tag-background-hover: rgba(52, 166, 207, 0.5);
+
+  --titlebar-background: var(--background-primary);
+  --titlebar-background-focused: var(--background-primary-alt);
+  --tab-container-background: var(--background-primary);
+  --tab-outline-color: rgba(105, 157, 191, 0.28);
+  --tab-text-color-focused-active-current: #effaff;
+
+  --nav-item-color-active: #e9f9ff;
+  --nav-item-background-active: rgba(53, 155, 208, 0.34);
+  --ribbon-background: var(--background-primary);
+
+  --scrollbar-thumb-bg: rgba(53, 111, 145, 0.62);
+  --scrollbar-active-thumb-bg: rgba(71, 178, 214, 0.76);
+
+  --blockquote-border-color: #42aad5;
+
+  --code-background: #061d30;
+  --code-normal: #d9f0ff;
+
+  --table-header-background: #103653;
+  --table-row-alt-background: rgba(29, 102, 143, 0.28);
+  --table-border-color: rgba(116, 178, 211, 0.27);
+
+  --cosmic-note-glow: #49b8dc;
+  --cosmic-pane-edge: #359bd0;
+}
+
+body.cosmic-scheme-blue-blob.theme-light {
+  --background-primary: #eef9ff;
+  --background-primary-alt: #dff1fa;
+  --background-secondary: #e6f5fb;
+  --background-secondary-alt: #d5eaf4;
+
+  --background-modifier-hover: rgba(48, 142, 191, 0.14);
+  --background-modifier-active-hover: rgba(43, 164, 195, 0.2);
+  --background-modifier-border: rgba(49, 99, 129, 0.22);
+  --background-modifier-border-hover: rgba(34, 133, 176, 0.39);
+  --background-modifier-border-focus: #247da4;
+  --background-modifier-error: #c64f79;
+  --background-modifier-error-hover: #9e365e;
+  --background-modifier-success: #3f9c8e;
+  --background-modifier-form-field: rgba(255, 255, 255, 0.82);
+
+  --text-normal: #143246;
+  --text-muted: #496f85;
+  --text-faint: #7898a9;
+  --text-accent: #176f9b;
+  --text-accent-hover: #0c4c70;
+  --text-on-accent: #f8fdff;
+  --text-selection: rgba(69, 161, 207, 0.25);
+  --text-highlight-bg: rgba(90, 201, 213, 0.23);
+  --text-error: #a93b63;
+  --text-success: #28786d;
+
+  --cosmic-accent: #237fae;
+  --cosmic-accent-hover: #145d87;
+  --interactive-accent-rgb: 35, 127, 174;
+
+  --interactive-normal: #e0f1f8;
+  --interactive-hover: #cee7f1;
+
+  --cosmic-h1-color: #176b95;
+  --cosmic-h2-color: #4d60a2;
+  --cosmic-h3-color: #75518d;
+  --h4-color: #247983;
+  --h5-color: #65528d;
+  --h6-color: #765674;
+
+  --link-color: #1f70a1;
+  --link-color-hover: #104c72;
+  --link-external-color: #5263a4;
+  --link-external-color-hover: #35427b;
+
+  --tag-color: #155b7e;
+  --tag-background: rgba(73, 169, 205, 0.23);
+  --tag-background-hover: rgba(53, 145, 184, 0.31);
+
+  --titlebar-background: var(--background-primary);
+  --titlebar-background-focused: var(--background-primary-alt);
+  --tab-container-background: var(--background-primary);
+  --tab-outline-color: rgba(60, 103, 128, 0.23);
+  --tab-text-color-focused-active-current: #173c51;
+
+  --nav-item-color-active: #145675;
+  --nav-item-background-active: rgba(62, 153, 193, 0.22);
+  --ribbon-background: var(--background-primary);
+
+  --scrollbar-thumb-bg: rgba(55, 105, 130, 0.34);
+  --scrollbar-active-thumb-bg: rgba(30, 120, 161, 0.5);
+
+  --blockquote-border-color: #2586ad;
+
+  --code-background: #d9eef6;
+  --code-normal: #143e58;
+
+  --table-header-background: #c6e4ef;
+  --table-row-alt-background: rgba(91, 177, 203, 0.18);
+  --table-border-color: rgba(51, 99, 124, 0.24);
+
+  --cosmic-note-glow: #4da5c4;
+  --cosmic-pane-edge: #2586ad;
+}
+
+/* Aurora */
+
+body.cosmic-scheme-aurora.theme-dark {
+  --background-primary: #031517;
+  --background-primary-alt: #020c10;
+  --background-secondary: #072025;
+  --background-secondary-alt: #041419;
+
+  --text-normal: #e8f7f4;
+  --text-muted: #a4cbc5;
+  --text-faint: #638d8b;
+
+  --cosmic-accent: #3e9d96;
+  --cosmic-accent-hover: #64c8b9;
+  --interactive-accent-rgb: 62, 157, 150;
+
+  --cosmic-h1-color: #70d2c2;
+  --cosmic-h2-color: #8bcce5;
+  --cosmic-h3-color: #d7bd78;
+  --h4-color: #7bbd9e;
+  --h5-color: #a9a0dc;
+  --h6-color: #e9e5c8;
+
+  --text-accent: #71d2c4;
+  --text-accent-hover: #c4fff4;
+
+  --link-color: #77cfe0;
+  --link-color-hover: #c6f6ff;
+
+  --tag-color: #d5fff4;
+  --tag-background: rgba(35, 126, 119, 0.36);
+
+  --blockquote-border-color: #4cb4a8;
+
+  --code-background: #082529;
+  --table-header-background: #164343;
+
+  --cosmic-note-glow: #63c7b8;
+  --cosmic-pane-edge: #3e9d96;
+}
+
+body.cosmic-scheme-aurora.theme-light {
+  --background-primary: #edf9f6;
+  --background-primary-alt: #dff1ed;
+  --background-secondary: #e5f5f1;
+  --background-secondary-alt: #d5eae5;
+
+  --text-normal: #183936;
+  --text-muted: #4d716c;
+  --text-faint: #7c9a96;
+
+  --cosmic-accent: #267c74;
+  --cosmic-accent-hover: #195e58;
+  --interactive-accent-rgb: 38, 124, 116;
+
+  --cosmic-h1-color: #1d7068;
+  --cosmic-h2-color: #39778f;
+  --cosmic-h3-color: #876833;
+  --h4-color: #46785e;
+  --h5-color: #5f5689;
+  --h6-color: #755f30;
+
+  --text-accent: #246f69;
+  --text-accent-hover: #144d49;
+
+  --link-color: #2a7187;
+  --link-color-hover: #174e61;
+
+  --tag-color: #205f59;
+  --tag-background: rgba(91, 183, 167, 0.25);
+
+  --blockquote-border-color: #3b988e;
+
+  --code-background: #d9eee9;
+  --table-header-background: #c7e5de;
+
+  --cosmic-note-glow: #56aa9e;
+  --cosmic-pane-edge: #3b988e;
+}
