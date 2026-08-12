@@ -1,13 +1,3 @@
-<div align="center">
-┆　┆　┆　┆　┆                                          ┆　┆　┆　┆　┆
-┆　┆  ࣪ ˖☆ ࣪⭑┆ ݁˖ .☆ . ݁ ˖              ˖  ݁. ☆. ˖ ݁┆⭑ ࣪☆˖  ࣪ ┆　┆
-☆⊹ ࣪ ┆ ˖ ࣪　⊹ ࣪ ★ ⋆.˚  ⊹ ࣪              ࣪⊹  ˚.⋆ ★  ࣪⊹　 ࣪˖ ┆  ࣪⊹☆
-   ࣪ ˖⋆˚★ ₊ ⊹　  ࣪˖ ࣪ ₊  ࣪ ˖　  COSMIC: A THEME FOR OBSIDIAN  　˖  ࣪ ₊  ࣪˖ ࣪ 　⊹ ₊ ★˚⋆˖  ࣪
-. ݁　⊹ ࣪ ˖　　　 ࣪ ˖                          ˖  ࣪　　　˖  ࣪⊹　 ݁.
-　　.  ݁　　　  ݁                                  ݁ 　　　 ݁ .　　
-　　.                                                  .　　
-</div>
-
 # Cosmic
 
 A colorful, customizable theme for [Obsidian](https://obsidian.md), inspired by painted night skies.
