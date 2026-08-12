@@ -16,7 +16,7 @@ A colorful, customizable theme for [Obsidian](https://obsidian.md), inspired by 
 
 Cosmic pairs deep, atmospheric surfaces with expressive color, readable typography, and coordinated light and dark modes. It includes seven color schemes, optional workspace atmospheres, and focused customization through the Style Settings plugin.
 
-![Cosmic Theme Preview](./screenshot.png)
+![Cosmic Theme Preview](./cosmic-screenshot.png)
 
 ## Features
 
