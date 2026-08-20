@@ -285,32 +285,14 @@ body {
   --cosmic-transition-duration: 160ms;
 
   /* Default typography */
-  --font-interface-theme:
-    "Inter",
-    "Avenir Next",
-    "IBM Plex Sans",
-    sans-serif;
-  --font-text-theme:
-    "Tirra",
-    "Source Serif 4",
-    Georgia,
-    serif;
+  --font-interface-theme: "Inter", "Avenir Next", "IBM Plex Sans", sans-serif;
+  --font-text-theme: "Tirra", "Source Serif 4", Georgia, serif;
   --font-monospace-theme:
-    "IBM Plex Mono",
-    "SFMono-Regular",
-    Menlo,
-    Consolas,
-    monospace;
+    "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
 
-  --font-interface:
-    var(--font-interface-override),
-    var(--font-interface-theme);
-  --font-text:
-    var(--font-text-override),
-    var(--font-text-theme);
-  --font-monospace:
-    var(--font-monospace-override),
-    var(--font-monospace-theme);
+  --font-interface: var(--font-interface-override), var(--font-interface-theme);
+  --font-text: var(--font-text-override), var(--font-text-theme);
+  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme);
   --font-editor-theme: var(--font-text-theme);
 
   --h1-font: var(--font-display);
@@ -394,7 +376,11 @@ body {
 
   --text-on-accent: var(--background-primary);
   --text-selection: color-mix(in srgb, var(--cosmic-accent) 28%, transparent);
-  --text-highlight-bg: color-mix(in srgb, var(--cosmic-h3-color) 30%, transparent);
+  --text-highlight-bg: color-mix(
+    in srgb,
+    var(--cosmic-h3-color) 30%,
+    transparent
+  );
   --text-error: var(--cosmic-h1-color);
   --text-success: var(--h5-color);
 
@@ -499,14 +485,22 @@ body {
   --code-tag: #86f0d4;
   --code-value: #ff9bb7;
 
-  --table-header-background: color-mix(in srgb, var(--violet) 72%, var(--marine));
+  --table-header-background: color-mix(
+    in srgb,
+    var(--violet) 72%,
+    var(--marine)
+  );
 }
 
 /* Cosmic - Original/Light */
 
 .theme-light {
   --background-primary: color-mix(in srgb, var(--cloud) 72%, var(--lilac));
-  --background-primary-alt: color-mix(in srgb, var(--pearl) 78%, var(--lavender));
+  --background-primary-alt: color-mix(
+    in srgb,
+    var(--pearl) 78%,
+    var(--lavender)
+  );
 
   --cosmic-pane-glow-current: var(--cosmic-pane-glow-light, 10%);
   --cosmic-pane-highlight-current: var(--cosmic-pane-highlight-light, 18%);
@@ -579,7 +573,7 @@ body.cosmic-scheme-red-dwarf.theme-dark {
   --link-external-color-hover: #dfd2ff;
 
   --tag-color: #7fd2b1;
-  --tag-background: rgba(127, 210, 177, 0.16);
+  --tag-background: rgb(127 210 177 / 16%);
 
   --blockquote-border-color: #f2bd72;
 
@@ -597,9 +591,8 @@ body.cosmic-scheme-red-dwarf.theme-dark {
   --code-value: #f2bd72;
 
   --table-header-background: #352044;
-  --table-row-alt-background: rgba(112, 207, 227, 0.08);
-  --table-border-color: rgba(187, 163, 238, 0.25);
-
+  --table-row-alt-background: rgb(112 207 227 / 8%);
+  --table-border-color: rgb(187 163 238 / 25%);
 }
 
 body.cosmic-scheme-red-dwarf.theme-light {
@@ -632,7 +625,7 @@ body.cosmic-scheme-red-dwarf.theme-light {
   --link-external-color-hover: #46316d;
 
   --tag-color: #37725a;
-  --tag-background: rgba(55, 114, 90, 0.14);
+  --tag-background: rgb(55 114 90 / 14%);
 
   --blockquote-border-color: #8a5a18;
 
@@ -650,9 +643,8 @@ body.cosmic-scheme-red-dwarf.theme-light {
   --code-value: #8a5a18;
 
   --table-header-background: #e6dcef;
-  --table-row-alt-background: rgba(31, 111, 120, 0.07);
-  --table-border-color: rgba(101, 75, 145, 0.22);
-
+  --table-row-alt-background: rgb(31 111 120 / 7%);
+  --table-border-color: rgb(101 75 145 / 22%);
 }
 
 /* Blue Blob */
@@ -663,15 +655,15 @@ body.cosmic-scheme-blue-blob.theme-dark {
   --background-secondary: #071a2d;
   --background-secondary-alt: #04101f;
 
-  --background-modifier-hover: rgba(54, 152, 210, 0.2);
-  --background-modifier-active-hover: rgba(73, 190, 220, 0.27);
-  --background-modifier-border: rgba(125, 185, 221, 0.23);
-  --background-modifier-border-hover: rgba(90, 205, 235, 0.46);
+  --background-modifier-hover: rgb(54 152 210 / 20%);
+  --background-modifier-active-hover: rgb(73 190 220 / 27%);
+  --background-modifier-border: rgb(125 185 221 / 23%);
+  --background-modifier-border-hover: rgb(90 205 235 / 46%);
   --background-modifier-border-focus: #5ad1e7;
   --background-modifier-error: #e4779d;
   --background-modifier-error-hover: #f19ab6;
   --background-modifier-success: #64d9c7;
-  --background-modifier-form-field: rgba(2, 15, 29, 0.78);
+  --background-modifier-form-field: rgb(2 15 29 / 78%);
 
   --text-normal: #eaf7ff;
   --text-muted: #a9cce1;
@@ -679,8 +671,8 @@ body.cosmic-scheme-blue-blob.theme-dark {
   --text-accent: #6ed5f0;
   --text-accent-hover: #b9edff;
   --text-on-accent: #031421;
-  --text-selection: rgba(84, 181, 229, 0.34);
-  --text-highlight-bg: rgba(101, 213, 229, 0.28);
+  --text-selection: rgb(84 181 229 / 34%);
+  --text-highlight-bg: rgb(101 213 229 / 28%);
   --text-error: #f19ab6;
   --text-success: #75dfd0;
 
@@ -704,16 +696,16 @@ body.cosmic-scheme-blue-blob.theme-dark {
   --link-external-color-hover: #d9ccff;
 
   --tag-color: #f3c66b;
-  --tag-background: rgba(243, 198, 107, 0.16);
-  --tag-background-hover: rgba(243, 198, 107, 0.24);
+  --tag-background: rgb(243 198 107 / 16%);
+  --tag-background-hover: rgb(243 198 107 / 24%);
 
-  --tab-outline-color: rgba(105, 157, 191, 0.28);
+  --tab-outline-color: rgb(105 157 191 / 28%);
   --tab-text-color-focused-active-current: #effaff;
 
   --nav-item-color-active: #e9f9ff;
-  --nav-item-background-active: rgba(53, 155, 208, 0.34);
-  --scrollbar-thumb-bg: rgba(53, 111, 145, 0.62);
-  --scrollbar-active-thumb-bg: rgba(71, 178, 214, 0.76);
+  --nav-item-background-active: rgb(53 155 208 / 34%);
+  --scrollbar-thumb-bg: rgb(53 111 145 / 62%);
+  --scrollbar-active-thumb-bg: rgb(71 178 214 / 76%);
 
   --blockquote-border-color: #70d8bb;
 
@@ -731,9 +723,8 @@ body.cosmic-scheme-blue-blob.theme-dark {
   --code-value: #f3c66b;
 
   --table-header-background: #182b4b;
-  --table-row-alt-background: rgba(255, 143, 163, 0.08);
-  --table-border-color: rgba(180, 154, 242, 0.26);
-
+  --table-row-alt-background: rgb(255 143 163 / 8%);
+  --table-border-color: rgb(180 154 242 / 26%);
 }
 
 body.cosmic-scheme-blue-blob.theme-light {
@@ -742,15 +733,15 @@ body.cosmic-scheme-blue-blob.theme-light {
   --background-secondary: #e6f5fb;
   --background-secondary-alt: #d5eaf4;
 
-  --background-modifier-hover: rgba(48, 142, 191, 0.14);
-  --background-modifier-active-hover: rgba(43, 164, 195, 0.2);
-  --background-modifier-border: rgba(49, 99, 129, 0.22);
-  --background-modifier-border-hover: rgba(34, 133, 176, 0.39);
+  --background-modifier-hover: rgb(48 142 191 / 14%);
+  --background-modifier-active-hover: rgb(43 164 195 / 20%);
+  --background-modifier-border: rgb(49 99 129 / 22%);
+  --background-modifier-border-hover: rgb(34 133 176 / 39%);
   --background-modifier-border-focus: #247da4;
   --background-modifier-error: #c64f79;
   --background-modifier-error-hover: #9e365e;
   --background-modifier-success: #3f9c8e;
-  --background-modifier-form-field: rgba(255, 255, 255, 0.82);
+  --background-modifier-form-field: rgb(255 255 255 / 82%);
 
   --text-normal: #143246;
   --text-muted: #496f85;
@@ -758,8 +749,8 @@ body.cosmic-scheme-blue-blob.theme-light {
   --text-accent: #176f9b;
   --text-accent-hover: #0c4c70;
   --text-on-accent: #f8fdff;
-  --text-selection: rgba(69, 161, 207, 0.25);
-  --text-highlight-bg: rgba(90, 201, 213, 0.23);
+  --text-selection: rgb(69 161 207 / 25%);
+  --text-highlight-bg: rgb(90 201 213 / 23%);
   --text-error: #a93b63;
   --text-success: #28786d;
 
@@ -783,16 +774,16 @@ body.cosmic-scheme-blue-blob.theme-light {
   --link-external-color-hover: #443375;
 
   --tag-color: #856016;
-  --tag-background: rgba(133, 96, 22, 0.12);
-  --tag-background-hover: rgba(133, 96, 22, 0.18);
+  --tag-background: rgb(133 96 22 / 12%);
+  --tag-background-hover: rgb(133 96 22 / 18%);
 
-  --tab-outline-color: rgba(60, 103, 128, 0.23);
+  --tab-outline-color: rgb(60 103 128 / 23%);
   --tab-text-color-focused-active-current: #173c51;
 
   --nav-item-color-active: #145675;
-  --nav-item-background-active: rgba(62, 153, 193, 0.22);
-  --scrollbar-thumb-bg: rgba(55, 105, 130, 0.34);
-  --scrollbar-active-thumb-bg: rgba(30, 120, 161, 0.5);
+  --nav-item-background-active: rgb(62 153 193 / 22%);
+  --scrollbar-thumb-bg: rgb(55 105 130 / 34%);
+  --scrollbar-active-thumb-bg: rgb(30 120 161 / 50%);
 
   --blockquote-border-color: #16766b;
 
@@ -810,9 +801,8 @@ body.cosmic-scheme-blue-blob.theme-light {
   --code-value: #856016;
 
   --table-header-background: #dfe1f2;
-  --table-row-alt-background: rgba(168, 63, 87, 0.06);
-  --table-border-color: rgba(99, 78, 155, 0.22);
-
+  --table-row-alt-background: rgb(168 63 87 / 6%);
+  --table-border-color: rgb(99 78 155 / 22%);
 }
 
 /* Aurora */
@@ -850,7 +840,7 @@ body.cosmic-scheme-aurora.theme-dark {
   --link-external-color-hover: #ffc4f1;
 
   --tag-color: #e38bd3;
-  --tag-background: rgba(227, 139, 211, 0.15);
+  --tag-background: rgb(227 139 211 / 15%);
 
   --blockquote-border-color: #f28e85;
 
@@ -868,9 +858,8 @@ body.cosmic-scheme-aurora.theme-dark {
   --code-value: #f1c56e;
 
   --table-header-background: #213b4a;
-  --table-row-alt-background: rgba(227, 139, 211, 0.07);
-  --table-border-color: rgba(130, 180, 255, 0.24);
-
+  --table-row-alt-background: rgb(227 139 211 / 7%);
+  --table-border-color: rgb(130 180 255 / 24%);
 }
 
 body.cosmic-scheme-aurora.theme-light {
@@ -906,7 +895,7 @@ body.cosmic-scheme-aurora.theme-light {
   --link-external-color-hover: #68285a;
 
   --tag-color: #943f82;
-  --tag-background: rgba(148, 63, 130, 0.11);
+  --tag-background: rgb(148 63 130 / 11%);
 
   --blockquote-border-color: #a3423e;
 
@@ -924,9 +913,8 @@ body.cosmic-scheme-aurora.theme-light {
   --code-value: #806014;
 
   --table-header-background: #dfe1ef;
-  --table-row-alt-background: rgba(148, 63, 130, 0.05);
-  --table-border-color: rgba(55, 95, 155, 0.2);
-
+  --table-row-alt-background: rgb(148 63 130 / 5%);
+  --table-border-color: rgb(55 95 155 / 20%);
 }
 
 /* Eclipse */
@@ -961,7 +949,7 @@ body.cosmic-scheme-eclipse.theme-dark {
   --link-external-color-hover: #ffc5d0;
 
   --tag-color: #f08ca2;
-  --tag-background: rgba(240, 140, 162, 0.15);
+  --tag-background: rgb(240 140 162 / 15%);
 
   --blockquote-border-color: #f2c66d;
 
@@ -979,9 +967,8 @@ body.cosmic-scheme-eclipse.theme-dark {
   --code-value: #f2c66d;
 
   --table-header-background: #2b2748;
-  --table-row-alt-background: rgba(114, 213, 232, 0.07);
-  --table-border-color: rgba(240, 140, 162, 0.23);
-
+  --table-row-alt-background: rgb(114 213 232 / 7%);
+  --table-border-color: rgb(240 140 162 / 23%);
 }
 
 body.cosmic-scheme-eclipse.theme-light {
@@ -1014,7 +1001,7 @@ body.cosmic-scheme-eclipse.theme-light {
   --link-external-color-hover: #742841;
 
   --tag-color: #a23f62;
-  --tag-background: rgba(162, 63, 98, 0.1);
+  --tag-background: rgb(162 63 98 / 10%);
 
   --blockquote-border-color: #806014;
 
@@ -1032,9 +1019,8 @@ body.cosmic-scheme-eclipse.theme-light {
   --code-value: #806014;
 
   --table-header-background: #d7e5e2;
-  --table-row-alt-background: rgba(22, 114, 123, 0.05);
-  --table-border-color: rgba(162, 63, 98, 0.19);
-
+  --table-row-alt-background: rgb(22 114 123 / 5%);
+  --table-border-color: rgb(162 63 98 / 19%);
 }
 
 /* Stardust */
@@ -1069,7 +1055,7 @@ body.cosmic-scheme-stardust.theme-dark {
   --link-external-color-hover: #b5fff6;
 
   --tag-color: #d89ce7;
-  --tag-background: rgba(216, 156, 231, 0.15);
+  --tag-background: rgb(216 156 231 / 15%);
 
   --blockquote-border-color: #f08e7d;
 
@@ -1087,9 +1073,8 @@ body.cosmic-scheme-stardust.theme-dark {
   --code-value: #efbd62;
 
   --table-header-background: #28372f;
-  --table-row-alt-background: rgba(116, 215, 203, 0.07);
-  --table-border-color: rgba(216, 156, 231, 0.23);
-
+  --table-row-alt-background: rgb(116 215 203 / 7%);
+  --table-border-color: rgb(216 156 231 / 23%);
 }
 
 body.cosmic-scheme-stardust.theme-light {
@@ -1122,7 +1107,7 @@ body.cosmic-scheme-stardust.theme-light {
   --link-external-color-hover: #154f4b;
 
   --tag-color: #754c7e;
-  --tag-background: rgba(117, 76, 126, 0.1);
+  --tag-background: rgb(117 76 126 / 10%);
 
   --blockquote-border-color: #a54c3f;
 
@@ -1140,9 +1125,8 @@ body.cosmic-scheme-stardust.theme-light {
   --code-value: #8a5b15;
 
   --table-header-background: #dce8e2;
-  --table-row-alt-background: rgba(36, 117, 111, 0.05);
-  --table-border-color: rgba(117, 76, 126, 0.19);
-
+  --table-row-alt-background: rgb(36 117 111 / 5%);
+  --table-border-color: rgb(117 76 126 / 19%);
 }
 
 /* Comet */
@@ -1177,7 +1161,7 @@ body.cosmic-scheme-comet.theme-dark {
   --link-external-color-hover: #cbd4ff;
 
   --tag-color: #f0c86b;
-  --tag-background: rgba(240, 200, 107, 0.15);
+  --tag-background: rgb(240 200 107 / 15%);
 
   --blockquote-border-color: #96aaf5;
 
@@ -1195,9 +1179,8 @@ body.cosmic-scheme-comet.theme-dark {
   --code-value: #f0c86b;
 
   --table-header-background: #34233d;
-  --table-row-alt-background: rgba(112, 214, 208, 0.07);
-  --table-border-color: rgba(150, 170, 245, 0.24);
-
+  --table-row-alt-background: rgb(112 214 208 / 7%);
+  --table-border-color: rgb(150 170 245 / 24%);
 }
 
 body.cosmic-scheme-comet.theme-light {
@@ -1230,7 +1213,7 @@ body.cosmic-scheme-comet.theme-light {
   --link-external-color-hover: #33447a;
 
   --tag-color: #806014;
-  --tag-background: rgba(128, 96, 20, 0.11);
+  --tag-background: rgb(128 96 20 / 11%);
 
   --blockquote-border-color: #4c5f9e;
 
@@ -1248,9 +1231,8 @@ body.cosmic-scheme-comet.theme-light {
   --code-value: #806014;
 
   --table-header-background: #dde6e2;
-  --table-row-alt-background: rgba(29, 113, 110, 0.05);
-  --table-border-color: rgba(76, 95, 158, 0.2);
-
+  --table-row-alt-background: rgb(29 113 110 / 5%);
+  --table-border-color: rgb(76 95 158 / 20%);
 }
 
 :root {
@@ -1354,18 +1336,64 @@ body.cosmic-atmosphere-deep {
 
 body.cosmic-atmosphere-deep .workspace::before {
   background:
-    radial-gradient(circle at 8% 13%, color-mix(in srgb, var(--text-normal) 72%, transparent) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 27% 7%, color-mix(in srgb, var(--cosmic-h2-color) 82%, transparent) 0 1px, transparent 1.8px),
-    radial-gradient(circle at 73% 19%, color-mix(in srgb, var(--text-normal) 68%, transparent) 0 1.2px, transparent 1.9px),
-    radial-gradient(circle at 91% 42%, color-mix(in srgb, var(--cosmic-h3-color) 78%, transparent) 0 1px, transparent 1.8px),
-    radial-gradient(circle at 61% 78%, color-mix(in srgb, var(--text-normal) 64%, transparent) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 18% 84%, color-mix(in srgb, var(--cosmic-accent) 82%, transparent) 0 1.2px, transparent 2px),
-    radial-gradient(circle at 12% 4%, color-mix(in srgb, var(--cosmic-accent) 52%, transparent), transparent 58rem),
-    radial-gradient(circle at 88% 12%, color-mix(in srgb, var(--cosmic-h2-color) 42%, transparent), transparent 46rem),
-    radial-gradient(circle at 52% 100%, color-mix(in srgb, var(--cosmic-h3-color) 36%, transparent), transparent 50rem),
-    radial-gradient(ellipse at center, transparent 34%, color-mix(in srgb, var(--background-primary-alt) 48%, transparent) 100%),
-    linear-gradient(145deg, var(--background-primary), var(--background-primary-alt));
-  background-blend-mode: screen, screen, screen, screen, screen, screen, screen, screen, screen, multiply, normal;
+    radial-gradient(
+      circle at 8% 13%,
+      color-mix(in srgb, var(--text-normal) 72%, transparent) 0 1px,
+      transparent 1.7px
+    ),
+    radial-gradient(
+      circle at 27% 7%,
+      color-mix(in srgb, var(--cosmic-h2-color) 82%, transparent) 0 1px,
+      transparent 1.8px
+    ),
+    radial-gradient(
+      circle at 73% 19%,
+      color-mix(in srgb, var(--text-normal) 68%, transparent) 0 1.2px,
+      transparent 1.9px
+    ),
+    radial-gradient(
+      circle at 91% 42%,
+      color-mix(in srgb, var(--cosmic-h3-color) 78%, transparent) 0 1px,
+      transparent 1.8px
+    ),
+    radial-gradient(
+      circle at 61% 78%,
+      color-mix(in srgb, var(--text-normal) 64%, transparent) 0 1px,
+      transparent 1.7px
+    ),
+    radial-gradient(
+      circle at 18% 84%,
+      color-mix(in srgb, var(--cosmic-accent) 82%, transparent) 0 1.2px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 12% 4%,
+      color-mix(in srgb, var(--cosmic-accent) 52%, transparent),
+      transparent 58rem
+    ),
+    radial-gradient(
+      circle at 88% 12%,
+      color-mix(in srgb, var(--cosmic-h2-color) 42%, transparent),
+      transparent 46rem
+    ),
+    radial-gradient(
+      circle at 52% 100%,
+      color-mix(in srgb, var(--cosmic-h3-color) 36%, transparent),
+      transparent 50rem
+    ),
+    radial-gradient(
+      ellipse at center,
+      transparent 34%,
+      color-mix(in srgb, var(--background-primary-alt) 48%, transparent) 100%
+    ),
+    linear-gradient(
+      145deg,
+      var(--background-primary),
+      var(--background-primary-alt)
+    );
+  background-blend-mode:
+    screen, screen, screen, screen, screen, screen, screen, screen, screen,
+    multiply, normal;
 }
 
 /* Note surfaces */
@@ -1374,17 +1402,29 @@ body.cosmic-atmosphere-deep .workspace::before {
   background:
     linear-gradient(
       135deg,
-      color-mix(in srgb, var(--cosmic-accent) var(--cosmic-pane-glow-current), transparent),
+      color-mix(
+        in srgb,
+        var(--cosmic-accent) var(--cosmic-pane-glow-current),
+        transparent
+      ),
       transparent 34rem
     ),
     radial-gradient(
       circle at 92% 8%,
-      color-mix(in srgb, var(--cosmic-h1-color) var(--cosmic-pane-highlight-current), transparent),
+      color-mix(
+        in srgb,
+        var(--cosmic-h1-color) var(--cosmic-pane-highlight-current),
+        transparent
+      ),
       transparent 18rem
     ),
     color-mix(
       in srgb,
-      var(--background-primary) var(--cosmic-atmosphere-note-opacity, var(--cosmic-note-surface-opacity)),
+      var(--background-primary)
+        var(
+          --cosmic-atmosphere-note-opacity,
+          var(--cosmic-note-surface-opacity)
+        ),
       transparent
     );
   border-inline: var(
@@ -1401,7 +1441,8 @@ body.cosmic-atmosphere-deep .workspace::before {
         var(--cosmic-accent) var(--cosmic-pane-edge-strength, 10%),
         transparent
       ),
-    inset -1px 0 0 color-mix(in srgb, var(--background-primary-alt) 30%, transparent);
+    inset -1px 0 0
+      color-mix(in srgb, var(--background-primary-alt) 30%, transparent);
 }
 
 /* Headings */
@@ -1490,10 +1531,6 @@ body.cosmic-atmosphere-deep .workspace::before {
 
 /* Code blocks */
 
-.markdown-rendered pre {
-  border-radius: var(--radius-m);
-}
-
 .cm-s-obsidian div.HyperMD-codeblock-begin {
   border-radius: var(--radius-m) var(--radius-m) 0 0;
 }
@@ -1511,7 +1548,9 @@ body.cosmic-atmosphere-deep .workspace::before {
   padding: 1.15rem 1.25rem;
   border: 1px solid var(--background-modifier-border);
   background: var(--code-background);
-  box-shadow: 0 3px 10px color-mix(in srgb, var(--background-primary-alt) 18%, transparent);
+  box-shadow: 0 3px 10px
+    color-mix(in srgb, var(--background-primary-alt) 18%, transparent);
+  border-radius: var(--radius-m);
 }
 
 .markdown-rendered pre button.copy-code-button {
@@ -1526,7 +1565,11 @@ body.cosmic-atmosphere-deep .workspace::before {
 
 .markdown-rendered pre button.copy-code-button:hover {
   color: var(--text-normal);
-  border-color: color-mix(in srgb, var(--cosmic-accent) 48%, var(--background-modifier-border));
+  border-color: color-mix(
+    in srgb,
+    var(--cosmic-accent) 48%,
+    var(--background-modifier-border)
+  );
 }
 
 .markdown-source-view.mod-cm6 .HyperMD-codeblock-begin {
@@ -1544,23 +1587,31 @@ body.cosmic-atmosphere-deep .workspace::before {
   color: var(--code-keyword);
 }
 
-.cm-s-obsidian .HyperMD-codeblock :is(.cm-def, .cm-variable-2, .cm-builtin, .cm-type),
+.cm-s-obsidian
+  .HyperMD-codeblock
+  :is(.cm-def, .cm-variable-2, .cm-builtin, .cm-type),
 .markdown-rendered pre :is(.token.function, .token.class-name, .token.builtin) {
   color: var(--code-function);
 }
 
-.cm-s-obsidian .HyperMD-codeblock :is(.cm-variable, .cm-property, .cm-attribute),
+.cm-s-obsidian
+  .HyperMD-codeblock
+  :is(.cm-variable, .cm-property, .cm-attribute),
 .markdown-rendered pre :is(.token.property, .token.attr-name, .token.variable) {
   color: var(--code-property);
 }
 
 .cm-s-obsidian .HyperMD-codeblock :is(.cm-string, .cm-string-2),
-.markdown-rendered pre :is(.token.string, .token.char, .token.attr-value, .token.regex) {
+.markdown-rendered
+  pre
+  :is(.token.string, .token.char, .token.attr-value, .token.regex) {
   color: var(--code-string);
 }
 
 .cm-s-obsidian .HyperMD-codeblock :is(.cm-number, .cm-atom),
-.markdown-rendered pre :is(.token.number, .token.boolean, .token.constant, .token.symbol) {
+.markdown-rendered
+  pre
+  :is(.token.number, .token.boolean, .token.constant, .token.symbol) {
   color: var(--code-value);
 }
 
@@ -1575,7 +1626,9 @@ body.cosmic-atmosphere-deep .workspace::before {
 }
 
 .cm-s-obsidian .HyperMD-codeblock :is(.cm-comment, .cm-meta),
-.markdown-rendered pre :is(.token.comment, .token.prolog, .token.doctype, .token.cdata) {
+.markdown-rendered
+  pre
+  :is(.token.comment, .token.prolog, .token.doctype, .token.cdata) {
   color: var(--code-comment);
   font-style: italic;
 }
@@ -1608,13 +1661,25 @@ body.cosmic-atmosphere-deep .workspace::before {
   counter-reset: cosmic-code-line;
 }
 
-.markdown-source-view.mod-cm6.cosmic-code-lines .HyperMD-codeblock:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end),
-.cosmic-code-lines .markdown-source-view.mod-cm6 .HyperMD-codeblock:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end) {
+.markdown-source-view.mod-cm6.cosmic-code-lines
+  .HyperMD-codeblock:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end),
+.cosmic-code-lines
+  .markdown-source-view.mod-cm6
+  .HyperMD-codeblock:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end) {
   counter-increment: cosmic-code-line;
 }
 
-.markdown-source-view.mod-cm6.cosmic-code-lines .HyperMD-codeblock:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end)::before,
-.cosmic-code-lines .markdown-source-view.mod-cm6 .HyperMD-codeblock:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end)::before {
+.markdown-source-view.mod-cm6.cosmic-code-lines
+  .HyperMD-codeblock:not(
+    .HyperMD-codeblock-begin,
+    .HyperMD-codeblock-end
+  )::before,
+.cosmic-code-lines
+  .markdown-source-view.mod-cm6
+  .HyperMD-codeblock:not(
+    .HyperMD-codeblock-begin,
+    .HyperMD-codeblock-end
+  )::before {
   content: counter(cosmic-code-line);
   display: inline-block;
   width: 2.4rem;
@@ -1640,7 +1705,8 @@ body.cosmic-atmosphere-deep .workspace::before {
   border-collapse: separate;
   border-spacing: 0;
   border-radius: var(--radius-m);
-  box-shadow: 0 10px 28px color-mix(in srgb, var(--background-primary-alt) 18%, transparent);
+  box-shadow: 0 10px 28px
+    color-mix(in srgb, var(--background-primary-alt) 18%, transparent);
 }
 
 .markdown-rendered th {
@@ -1672,8 +1738,11 @@ body.cosmic-atmosphere-deep .workspace::before {
   font-variant-numeric: tabular-nums;
 }
 
-:is(.markdown-preview-view, .markdown-rendered).cosmic-table-compact :is(th, td),
-.cosmic-table-compact :is(.markdown-preview-view, .markdown-rendered) :is(th, td) {
+:is(.markdown-preview-view, .markdown-rendered).cosmic-table-compact
+  :is(th, td),
+.cosmic-table-compact
+  :is(.markdown-preview-view, .markdown-rendered)
+  :is(th, td) {
   padding: 0.35rem 0.5rem;
 }
 
@@ -1683,7 +1752,9 @@ body.cosmic-atmosphere-deep .workspace::before {
 }
 
 :is(.markdown-preview-view, .markdown-rendered).cosmic-table-center :is(th, td),
-.cosmic-table-center :is(.markdown-preview-view, .markdown-rendered) :is(th, td) {
+.cosmic-table-center
+  :is(.markdown-preview-view, .markdown-rendered)
+  :is(th, td) {
   text-align: center;
 }
 
@@ -1692,13 +1763,23 @@ body.cosmic-atmosphere-deep .workspace::before {
   white-space: nowrap;
 }
 
-:is(.markdown-preview-view, .markdown-rendered).cosmic-table-striped tbody tr:nth-child(odd),
-.cosmic-table-striped :is(.markdown-preview-view, .markdown-rendered) tbody tr:nth-child(odd) {
+:is(.markdown-preview-view, .markdown-rendered).cosmic-table-striped
+  tbody
+  tr:nth-child(odd),
+.cosmic-table-striped
+  :is(.markdown-preview-view, .markdown-rendered)
+  tbody
+  tr:nth-child(odd) {
   background-color: transparent;
 }
 
-:is(.markdown-preview-view, .markdown-rendered).cosmic-table-striped tbody tr:nth-child(even),
-.cosmic-table-striped :is(.markdown-preview-view, .markdown-rendered) tbody tr:nth-child(even) {
+:is(.markdown-preview-view, .markdown-rendered).cosmic-table-striped
+  tbody
+  tr:nth-child(even),
+.cosmic-table-striped
+  :is(.markdown-preview-view, .markdown-rendered)
+  tbody
+  tr:nth-child(even) {
   background-color: color-mix(in srgb, var(--cosmic-accent) 9%, transparent);
 }
 
@@ -1708,12 +1789,22 @@ body.cosmic-atmosphere-deep .workspace::before {
 }
 
 :is(.markdown-preview-view, .markdown-rendered).cosmic-table-numbered tbody tr,
-.cosmic-table-numbered :is(.markdown-preview-view, .markdown-rendered) tbody tr {
+.cosmic-table-numbered
+  :is(.markdown-preview-view, .markdown-rendered)
+  tbody
+  tr {
   counter-increment: cosmic-table-row;
 }
 
-:is(.markdown-preview-view, .markdown-rendered).cosmic-table-numbered tbody tr > :first-child::before,
-.cosmic-table-numbered :is(.markdown-preview-view, .markdown-rendered) tbody tr > :first-child::before {
+:is(.markdown-preview-view, .markdown-rendered).cosmic-table-numbered
+  tbody
+  tr
+  > :first-child::before,
+.cosmic-table-numbered
+  :is(.markdown-preview-view, .markdown-rendered)
+  tbody
+  tr
+  > :first-child::before {
   content: counter(cosmic-table-row) ". ";
   color: var(--cosmic-accent);
   font-weight: 700;
@@ -1747,7 +1838,11 @@ body.cosmic-atmosphere-deep .workspace::before {
 .tree-item-self.is-clickable.is-active {
   color: var(--text-normal);
   background:
-    linear-gradient(90deg, color-mix(in srgb, var(--cosmic-accent) 16%, transparent), transparent),
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--cosmic-accent) 16%, transparent),
+      transparent
+    ),
     color-mix(in srgb, var(--background-secondary-alt) 70%, transparent);
 }
 
@@ -1768,7 +1863,11 @@ body.cosmic-atmosphere-deep .workspace::before {
 
 .search-result-file-match {
   border-radius: var(--radius-s);
-  background-color: color-mix(in srgb, var(--background-primary-alt) 56%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--background-primary-alt) 56%,
+    transparent
+  );
 }
 
 .search-result-file-match:hover {
@@ -1785,32 +1884,32 @@ body.cosmic-atmosphere-deep .workspace::before {
 .suggestion-item.is-selected,
 .menu-item.selected,
 .menu-item:hover {
-  background:
-    linear-gradient(
-      90deg,
-      color-mix(in srgb, var(--cosmic-accent) 18%, transparent),
-      color-mix(in srgb, var(--cosmic-h2-color) 8%, transparent)
-    );
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--cosmic-accent) 18%, transparent),
+    color-mix(in srgb, var(--cosmic-h2-color) 8%, transparent)
+  );
   box-shadow: inset 3px 0 0 var(--cosmic-accent);
 }
 
 .mod-cta {
   color: var(--text-on-accent);
   border-color: color-mix(in srgb, var(--cosmic-accent) 72%, transparent);
-  background:
-    linear-gradient(
-      135deg,
-      var(--cosmic-accent),
-      color-mix(in srgb, var(--cosmic-accent) 74%, var(--cosmic-h2-color))
-    );
-  box-shadow: 0 8px 22px color-mix(in srgb, var(--cosmic-accent) 22%, transparent);
+  background: linear-gradient(
+    135deg,
+    var(--cosmic-accent),
+    color-mix(in srgb, var(--cosmic-accent) 74%, var(--cosmic-h2-color))
+  );
+  box-shadow: 0 8px 22px
+    color-mix(in srgb, var(--cosmic-accent) 22%, transparent);
 }
 
 .tooltip {
   color: var(--text-normal);
   border: 1px solid var(--background-modifier-border);
   background: var(--background-primary-alt);
-  box-shadow: 0 4px 12px color-mix(in srgb, var(--background-primary) 28%, transparent);
+  box-shadow: 0 4px 12px
+    color-mix(in srgb, var(--background-primary) 28%, transparent);
 }
 
 .mod-cta:hover {
@@ -1836,17 +1935,28 @@ textarea,
 button:not(.mod-cta):hover,
 select:hover,
 .dropdown:hover {
-  border-color: color-mix(in srgb, var(--cosmic-accent) 54%, var(--background-modifier-border));
+  border-color: color-mix(
+    in srgb,
+    var(--cosmic-accent) 54%,
+    var(--background-modifier-border)
+  );
   background-color: var(--cosmic-control-hover);
 }
 
 :is(button, input, select, textarea, .dropdown):focus-visible {
   outline: 2px solid color-mix(in srgb, var(--cosmic-accent) 78%, white);
   outline-offset: 2px;
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--cosmic-accent) 16%, transparent);
+  box-shadow: 0 0 0 4px
+    color-mix(in srgb, var(--cosmic-accent) 16%, transparent);
 }
 
-:is(a, .clickable-icon, .nav-file-title, .nav-folder-title, .tree-item-self):focus-visible {
+:is(
+  a,
+  .clickable-icon,
+  .nav-file-title,
+  .nav-folder-title,
+  .tree-item-self
+):focus-visible {
   outline: 2px solid color-mix(in srgb, var(--cosmic-accent) 78%, white);
   outline-offset: 2px;
   border-radius: var(--radius-s);
@@ -1864,29 +1974,38 @@ input[type="checkbox"]:checked {
 /* Semantic task states: [/], [!], [?], [*], [>], [-], and [i] */
 
 input[type="checkbox"][data-task]:is(
-  [data-task="/"],
-  [data-task="!"],
-  [data-task="?"],
-  [data-task="*"],
-  [data-task=">"],
-  [data-task="-"],
-  [data-task="i"]
-) {
+    [data-task="/"],
+    [data-task="!"],
+    [data-task="?"],
+    [data-task="*"],
+    [data-task=">"],
+    [data-task="-"],
+    [data-task="i"]
+  ) {
   position: relative;
   border-color: var(--cosmic-task-color, var(--cosmic-accent));
-  background: color-mix(in srgb, var(--cosmic-task-color, var(--cosmic-accent)) 15%, transparent);
-  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--cosmic-task-color, var(--cosmic-accent)) 22%, transparent);
+  background: color-mix(
+    in srgb,
+    var(--cosmic-task-color, var(--cosmic-accent)) 15%,
+    transparent
+  );
+  box-shadow: inset 0 0 0 1px
+    color-mix(
+      in srgb,
+      var(--cosmic-task-color, var(--cosmic-accent)) 22%,
+      transparent
+    );
 }
 
 input[type="checkbox"][data-task]:is(
-  [data-task="/"],
-  [data-task="!"],
-  [data-task="?"],
-  [data-task="*"],
-  [data-task=">"],
-  [data-task="-"],
-  [data-task="i"]
-)::after {
+    [data-task="/"],
+    [data-task="!"],
+    [data-task="?"],
+    [data-task="*"],
+    [data-task=">"],
+    [data-task="-"],
+    [data-task="i"]
+  )::after {
   content: var(--cosmic-task-symbol);
   position: absolute;
   inset: 50% auto auto 50%;
@@ -1975,11 +2094,16 @@ progress,
 .popover {
   border: 1px solid var(--background-modifier-border);
   background: var(--background-primary-alt);
-  box-shadow: 0 8px 24px color-mix(in srgb, var(--background-primary) 30%, transparent);
+  box-shadow: 0 8px 24px
+    color-mix(in srgb, var(--background-primary) 30%, transparent);
 }
 
 .modal-bg {
-  background-color: color-mix(in srgb, var(--background-primary) 72%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--background-primary) 72%,
+    transparent
+  );
 }
 
 .prompt-input-container,
@@ -2014,7 +2138,11 @@ progress,
 
 .workspace-tab-header.is-active {
   color: var(--tab-text-color-focused-active-current);
-  background-color: color-mix(in srgb, var(--cosmic-accent) 14%, var(--background-secondary-alt));
+  background-color: color-mix(
+    in srgb,
+    var(--cosmic-accent) 14%,
+    var(--background-secondary-alt)
+  );
   box-shadow: inset 0 -2px 0 var(--cosmic-accent);
 }
 
@@ -2035,7 +2163,8 @@ progress,
   margin-block: 1rem 1.5rem;
   padding: 0.45rem 0 0.55rem 1rem;
   border: 0;
-  border-inline-start: 2px solid color-mix(in srgb, var(--cosmic-accent) 58%, transparent);
+  border-inline-start: 2px solid
+    color-mix(in srgb, var(--cosmic-accent) 58%, transparent);
   border-radius: 0;
   background: linear-gradient(
     90deg,
@@ -2058,12 +2187,18 @@ progress,
 }
 
 .metadata-property {
-  --metadata-label-text-color: color-mix(in srgb, var(--cosmic-accent) 78%, var(--text-normal));
+  --metadata-label-text-color: color-mix(
+    in srgb,
+    var(--cosmic-accent) 78%,
+    var(--text-normal)
+  );
+
   min-height: 2rem;
   margin-block: 0;
   padding: 0.12rem 0.35rem;
   border: 0;
-  border-bottom: 1px solid color-mix(in srgb, var(--background-modifier-border) 62%, transparent);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--background-modifier-border) 62%, transparent);
   border-radius: 3px 0 0 3px;
   transition:
     border-color var(--cosmic-transition-duration, 160ms) ease,
@@ -2072,7 +2207,11 @@ progress,
 
 .metadata-property:hover,
 .metadata-property:focus-within {
-  border-bottom-color: color-mix(in srgb, var(--cosmic-accent) 38%, var(--background-modifier-border));
+  border-bottom-color: color-mix(
+    in srgb,
+    var(--cosmic-accent) 38%,
+    var(--background-modifier-border)
+  );
   background-color: color-mix(in srgb, var(--cosmic-accent) 6%, transparent);
 }
 
@@ -2119,19 +2258,28 @@ progress,
 
 /* Per-note properties layouts */
 
-:is(.markdown-preview-view, .markdown-source-view).cosmic-properties-compact .metadata-container,
-.cosmic-properties-compact :is(.markdown-preview-view, .markdown-source-view) .metadata-container {
+:is(.markdown-preview-view, .markdown-source-view).cosmic-properties-compact
+  .metadata-container,
+.cosmic-properties-compact
+  :is(.markdown-preview-view, .markdown-source-view)
+  .metadata-container {
   padding: var(--size-4-2);
 }
 
-:is(.markdown-preview-view, .markdown-source-view).cosmic-properties-compact .metadata-property,
-.cosmic-properties-compact :is(.markdown-preview-view, .markdown-source-view) .metadata-property {
+:is(.markdown-preview-view, .markdown-source-view).cosmic-properties-compact
+  .metadata-property,
+.cosmic-properties-compact
+  :is(.markdown-preview-view, .markdown-source-view)
+  .metadata-property {
   margin-block: 0;
   min-height: 1.8rem;
 }
 
-:is(.markdown-preview-view, .markdown-source-view).cosmic-properties-plain .metadata-container,
-.cosmic-properties-plain :is(.markdown-preview-view, .markdown-source-view) .metadata-container {
+:is(.markdown-preview-view, .markdown-source-view).cosmic-properties-plain
+  .metadata-container,
+.cosmic-properties-plain
+  :is(.markdown-preview-view, .markdown-source-view)
+  .metadata-container {
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -2139,21 +2287,30 @@ progress,
   box-shadow: none;
 }
 
-:is(.markdown-preview-view, .markdown-source-view).cosmic-properties-plain .metadata-property,
-.cosmic-properties-plain :is(.markdown-preview-view, .markdown-source-view) .metadata-property {
+:is(.markdown-preview-view, .markdown-source-view).cosmic-properties-plain
+  .metadata-property,
+.cosmic-properties-plain
+  :is(.markdown-preview-view, .markdown-source-view)
+  .metadata-property {
   border-bottom: 1px solid var(--background-modifier-border);
   border-radius: 0;
 }
 
-:is(.markdown-preview-view, .markdown-source-view).cosmic-properties-card .metadata-properties,
-.cosmic-properties-card :is(.markdown-preview-view, .markdown-source-view) .metadata-properties {
+:is(.markdown-preview-view, .markdown-source-view).cosmic-properties-card
+  .metadata-properties,
+.cosmic-properties-card
+  :is(.markdown-preview-view, .markdown-source-view)
+  .metadata-properties {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
   gap: var(--size-4-2);
 }
 
-:is(.markdown-preview-view, .markdown-source-view).cosmic-properties-card .metadata-property,
-.cosmic-properties-card :is(.markdown-preview-view, .markdown-source-view) .metadata-property {
+:is(.markdown-preview-view, .markdown-source-view).cosmic-properties-card
+  .metadata-property,
+.cosmic-properties-card
+  :is(.markdown-preview-view, .markdown-source-view)
+  .metadata-property {
   padding: var(--size-4-2);
   border-color: var(--background-modifier-border);
   background-color: var(--background-primary-alt);
@@ -2163,8 +2320,10 @@ progress,
 
 .callout {
   --callout-color: var(--interactive-accent-rgb);
+
   overflow: hidden;
-  border: 1px solid color-mix(in srgb, rgb(var(--callout-color)) 28%, transparent);
+  border: 1px solid
+    color-mix(in srgb, rgb(var(--callout-color)) 28%, transparent);
   border-inline-start-width: 4px;
   border-radius: var(--radius-m);
   box-shadow: none;
@@ -2214,12 +2373,13 @@ progress,
   border-color: var(--background-modifier-border);
   border-radius: var(--radius-m);
   background-color: var(--background-primary-alt);
-  box-shadow: 0 4px 14px color-mix(in srgb, var(--background-primary) 24%, transparent);
+  box-shadow: 0 4px 14px
+    color-mix(in srgb, var(--background-primary) 24%, transparent);
 }
 
 .canvas-node.is-focused {
   border-color: var(--interactive-accent);
-  box-shadow: 0 0 0 2px rgba(var(--interactive-accent-rgb), 0.24);
+  box-shadow: 0 0 0 2px rgb(var(--interactive-accent-rgb), 0.24);
 }
 
 .canvas-node:nth-child(6n + 1) {
@@ -2249,7 +2409,8 @@ progress,
 .canvas-control-group {
   border: 1px solid var(--background-modifier-border);
   background-color: var(--background-primary-alt);
-  box-shadow: 0 4px 14px color-mix(in srgb, var(--background-primary) 24%, transparent);
+  box-shadow: 0 4px 14px
+    color-mix(in srgb, var(--background-primary) 24%, transparent);
 }
 
 /* Graph */
@@ -2312,24 +2473,39 @@ body.cosmic-plain-embeds .file-embed {
 .callout[data-callout="constellation"] {
   --callout-color: var(--interactive-accent-rgb);
   --callout-icon: lucide-sparkles;
+
   background:
-    radial-gradient(circle at 88% 18%, color-mix(in srgb, var(--cosmic-h2-color) 18%, transparent), transparent 12rem),
+    radial-gradient(
+      circle at 88% 18%,
+      color-mix(in srgb, var(--cosmic-h2-color) 18%, transparent),
+      transparent 12rem
+    ),
     color-mix(in srgb, var(--cosmic-accent) 11%, transparent);
 }
 
 .callout[data-callout="orbit"] {
   --callout-color: var(--interactive-accent-rgb);
   --callout-icon: lucide-orbit;
+
   background:
-    linear-gradient(115deg, color-mix(in srgb, var(--cosmic-h3-color) 15%, transparent), transparent 58%),
+    linear-gradient(
+      115deg,
+      color-mix(in srgb, var(--cosmic-h3-color) 15%, transparent),
+      transparent 58%
+    ),
     color-mix(in srgb, var(--h4-color) 9%, transparent);
 }
 
 .callout[data-callout="signal"] {
   --callout-color: var(--interactive-accent-rgb);
   --callout-icon: lucide-radio-tower;
+
   background:
-    linear-gradient(90deg, color-mix(in srgb, var(--h5-color) 14%, transparent), transparent),
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--h5-color) 14%, transparent),
+      transparent
+    ),
     color-mix(in srgb, var(--cosmic-accent) 8%, transparent);
 }
 
@@ -2357,7 +2533,9 @@ body.cosmic-plain-embeds .file-embed {
 }
 
 :is(.markdown-preview-view, .markdown-rendered).cosmic-image-grid p:has(> img),
-.cosmic-image-grid :is(.markdown-preview-view, .markdown-rendered) p:has(> img) {
+.cosmic-image-grid
+  :is(.markdown-preview-view, .markdown-rendered)
+  p:has(> img) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
   gap: var(--size-4-3);
@@ -2375,7 +2553,9 @@ body.cosmic-plain-embeds .file-embed {
 }
 
 :is(.markdown-preview-view, .markdown-rendered).cosmic-list-cards > :is(ul, ol),
-.cosmic-list-cards :is(.markdown-preview-view, .markdown-rendered) > :is(ul, ol) {
+.cosmic-list-cards
+  :is(.markdown-preview-view, .markdown-rendered)
+  > :is(ul, ol) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
   gap: var(--size-4-3);
@@ -2383,8 +2563,13 @@ body.cosmic-plain-embeds .file-embed {
   list-style: none;
 }
 
-:is(.markdown-preview-view, .markdown-rendered).cosmic-list-cards > :is(ul, ol) > li,
-.cosmic-list-cards :is(.markdown-preview-view, .markdown-rendered) > :is(ul, ol) > li {
+:is(.markdown-preview-view, .markdown-rendered).cosmic-list-cards
+  > :is(ul, ol)
+  > li,
+.cosmic-list-cards
+  :is(.markdown-preview-view, .markdown-rendered)
+  > :is(ul, ol)
+  > li {
   margin: 0;
   padding: var(--size-4-4);
   border: 1px solid var(--background-modifier-border);
@@ -2392,8 +2577,11 @@ body.cosmic-plain-embeds .file-embed {
   background: var(--background-primary-alt);
 }
 
-:is(.markdown-preview-view, .markdown-rendered).cosmic-wide-media :is(img, video, iframe, .internal-embed),
-.cosmic-wide-media :is(.markdown-preview-view, .markdown-rendered) :is(img, video, iframe, .internal-embed) {
+:is(.markdown-preview-view, .markdown-rendered).cosmic-wide-media
+  :is(img, video, iframe, .internal-embed),
+.cosmic-wide-media
+  :is(.markdown-preview-view, .markdown-rendered)
+  :is(img, video, iframe, .internal-embed) {
   width: min(100vw - 3rem, calc(var(--file-line-width) + 16rem));
   max-width: none;
   margin-inline: 50%;
@@ -2403,7 +2591,11 @@ body.cosmic-plain-embeds .file-embed {
 /* Bases */
 
 .bases-view {
-  --bases-table-row-background-hover: color-mix(in srgb, var(--cosmic-accent) 10%, transparent);
+  --bases-table-row-background-hover: color-mix(
+    in srgb,
+    var(--cosmic-accent) 10%,
+    transparent
+  );
   --bases-cards-background: transparent;
 }
 
@@ -2438,7 +2630,11 @@ body.cosmic-plain-embeds .file-embed {
 .pdf-viewer,
 .pdf-sidebar-container {
   background:
-    radial-gradient(circle at 90% 8%, color-mix(in srgb, var(--cosmic-h2-color) 10%, transparent), transparent 18rem),
+    radial-gradient(
+      circle at 90% 8%,
+      color-mix(in srgb, var(--cosmic-h2-color) 10%, transparent),
+      transparent 18rem
+    ),
     var(--background-primary);
 }
 
@@ -2446,14 +2642,16 @@ body.cosmic-plain-embeds .file-embed {
 .pdf-container .pdf-toolbar {
   border: 1px solid var(--background-modifier-border);
   background-color: var(--background-primary-alt);
-  box-shadow: 0 4px 14px color-mix(in srgb, var(--background-primary) 24%, transparent);
+  box-shadow: 0 4px 14px
+    color-mix(in srgb, var(--background-primary) 24%, transparent);
 }
 
 .pdf-viewer .page {
   overflow: hidden;
   border: 1px solid var(--background-modifier-border);
   border-radius: var(--radius-s);
-  box-shadow: 0 14px 38px color-mix(in srgb, var(--background-primary-alt) 38%, transparent);
+  box-shadow: 0 14px 38px
+    color-mix(in srgb, var(--background-primary-alt) 38%, transparent);
 }
 
 /* Density options */
@@ -2518,7 +2716,11 @@ body.cosmic-statusbar-pill .status-bar {
   margin: 0.35rem;
   padding: 0.15rem 0.45rem;
   border-radius: 999px;
-  background-color: color-mix(in srgb, var(--background-secondary) 82%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--background-secondary) 82%,
+    transparent
+  );
 }
 
 body.cosmic-statusbar-minimal .status-bar {
@@ -2555,7 +2757,8 @@ body.cosmic-statusbar-minimal .status-bar {
   color: var(--text-normal);
   padding: 0 1.1rem 1rem;
   border: 1px solid var(--background-modifier-border);
-  border-top: 3px solid color-mix(in srgb, var(--cosmic-accent) 72%, transparent);
+  border-top: 3px solid
+    color-mix(in srgb, var(--cosmic-accent) 72%, transparent);
   border-radius: 0 0 var(--radius-m) var(--radius-m);
   background-color: var(--background-primary-alt);
 }
@@ -2622,7 +2825,12 @@ body.cosmic-statusbar-minimal .status-bar {
   margin-top: 0.5rem;
   padding: 0.65rem 0 0.45rem;
   border: 0 !important;
-  border-bottom: 1px solid color-mix(in srgb, var(--cosmic-accent) 24%, var(--background-modifier-border)) !important;
+  border-bottom: 1px solid
+    color-mix(
+      in srgb,
+      var(--cosmic-accent) 24%,
+      var(--background-modifier-border)
+    ) !important;
   border-radius: 0;
   background: transparent;
 }
@@ -2652,14 +2860,22 @@ body.cosmic-statusbar-minimal .status-bar {
   .style-settings-container
   > .setting-item:not(.style-settings-heading) {
   padding: 0.75rem 0;
-  border-bottom-color: color-mix(in srgb, var(--background-modifier-border) 72%, transparent);
+  border-bottom-color: color-mix(
+    in srgb,
+    var(--background-modifier-border) 72%,
+    transparent
+  );
 }
 
 .style-settings-heading[data-id="cosmic-theme-settings"]
   + .style-settings-container
   .style-settings-container
   > .setting-item:not(.style-settings-heading):hover {
-  border-bottom-color: color-mix(in srgb, var(--cosmic-accent) 30%, var(--background-modifier-border));
+  border-bottom-color: color-mix(
+    in srgb,
+    var(--cosmic-accent) 30%,
+    var(--background-modifier-border)
+  );
   background-color: transparent;
 }
 
@@ -2674,10 +2890,7 @@ body.cosmic-statusbar-minimal .status-bar {
 
 .style-settings-heading[data-id="cosmic-theme-settings"]
   + .style-settings-container
-  :is(
-    .style-settings-heading,
-    .setting-item[data-id="cosmic-info"]
-  )
+  :is(.style-settings-heading, .setting-item[data-id="cosmic-info"])
   .setting-item-description:empty {
   display: none;
 }
@@ -2754,12 +2967,17 @@ body.cosmic-statusbar-minimal .status-bar {
 }
 
 * {
-  scrollbar-color: color-mix(in srgb, var(--cosmic-accent) 42%, transparent) transparent;
+  scrollbar-color: color-mix(in srgb, var(--cosmic-accent) 42%, transparent)
+    transparent;
 }
 
 .workspace-leaf-resize-handle,
 .workspace-split.mod-root .workspace-leaf-resize-handle {
-  border-color: color-mix(in srgb, var(--cosmic-accent) 18%, var(--background-modifier-border));
+  border-color: color-mix(
+    in srgb,
+    var(--cosmic-accent) 18%,
+    var(--background-modifier-border)
+  );
 }
 
 .nav-file-title,
@@ -2780,11 +2998,19 @@ body.cosmic-statusbar-minimal .status-bar {
 }
 
 .setting-item {
-  border-color: color-mix(in srgb, var(--cosmic-accent) 14%, var(--background-modifier-border));
+  border-color: color-mix(
+    in srgb,
+    var(--cosmic-accent) 14%,
+    var(--background-modifier-border)
+  );
 }
 
 .setting-item:hover {
-  border-color: color-mix(in srgb, var(--cosmic-accent) 28%, var(--background-modifier-border));
+  border-color: color-mix(
+    in srgb,
+    var(--cosmic-accent) 28%,
+    var(--background-modifier-border)
+  );
 }
 
 body.cosmic-reduce-effects {
@@ -2817,7 +3043,7 @@ body.cosmic-reduce-effects .workspace::before {
   }
 }
 
-@media (max-width: 700px) {
+@media (width <= 700px) {
   .style-settings-heading[data-id="cosmic-theme-settings"] {
     padding: 1rem;
   }
@@ -2841,10 +3067,16 @@ body.cosmic-reduce-effects .workspace::before {
 
   .markdown-rendered.cosmic-card-grid,
   .markdown-preview-view.cosmic-card-grid,
-  :is(.markdown-preview-view, .markdown-rendered).cosmic-list-cards > :is(ul, ol),
-  .cosmic-list-cards :is(.markdown-preview-view, .markdown-rendered) > :is(ul, ol),
-  :is(.markdown-preview-view, .markdown-source-view).cosmic-properties-card .metadata-properties,
-  .cosmic-properties-card :is(.markdown-preview-view, .markdown-source-view) .metadata-properties {
+  :is(.markdown-preview-view, .markdown-rendered).cosmic-list-cards
+    > :is(ul, ol),
+  .cosmic-list-cards
+    :is(.markdown-preview-view, .markdown-rendered)
+    > :is(ul, ol),
+  :is(.markdown-preview-view, .markdown-source-view).cosmic-properties-card
+    .metadata-properties,
+  .cosmic-properties-card
+    :is(.markdown-preview-view, .markdown-source-view)
+    .metadata-properties {
     grid-template-columns: 1fr;
   }
 
@@ -2855,14 +3087,16 @@ body.cosmic-reduce-effects .workspace::before {
     -webkit-overflow-scrolling: touch;
   }
 
-  :is(.markdown-preview-view, .markdown-rendered).cosmic-wide-media :is(img, video, iframe, .internal-embed),
-  .cosmic-wide-media :is(.markdown-preview-view, .markdown-rendered) :is(img, video, iframe, .internal-embed) {
+  :is(.markdown-preview-view, .markdown-rendered).cosmic-wide-media
+    :is(img, video, iframe, .internal-embed),
+  .cosmic-wide-media
+    :is(.markdown-preview-view, .markdown-rendered)
+    :is(img, video, iframe, .internal-embed) {
     width: 100%;
     max-width: 100%;
     margin-inline: 0;
     transform: none;
   }
-
 }
 
 @media (forced-colors: active) {
@@ -2884,15 +3118,16 @@ body.cosmic-reduce-effects .workspace::before {
   body,
   body.theme-dark,
   body.theme-light {
-    --background-primary: #ffffff;
-    --background-primary-alt: #ffffff;
-    --background-secondary: #ffffff;
-    --background-secondary-alt: #ffffff;
+    --background-primary: #fff;
+    --background-primary-alt: #fff;
+    --background-secondary: #fff;
+    --background-secondary-alt: #fff;
     --text-normal: #17151c;
     --text-muted: #45414d;
     --text-faint: #67616f;
+
     color: #17151c;
-    background: #ffffff !important;
+    background: #fff !important;
   }
 
   .workspace,
@@ -2904,7 +3139,7 @@ body.cosmic-reduce-effects .workspace::before {
   .markdown-preview-view,
   .markdown-rendered {
     color: #17151c !important;
-    background: #ffffff !important;
+    background: #fff !important;
     box-shadow: none !important;
   }
 
@@ -2939,14 +3174,24 @@ body.cosmic-reduce-effects .workspace::before {
     color: #55505c !important;
   }
 
-  .markdown-rendered :is(pre, blockquote, table, img, figure, .callout, .internal-embed, .file-embed) {
+  .markdown-rendered
+    :is(
+      pre,
+      blockquote,
+      table,
+      img,
+      figure,
+      .callout,
+      .internal-embed,
+      .file-embed
+    ) {
     break-inside: avoid-page;
     box-shadow: none !important;
   }
 
   .markdown-rendered :is(.callout, .internal-embed, .file-embed, pre, table) {
     border-color: #aaa4b0 !important;
-    background: #ffffff !important;
+    background: #fff !important;
   }
 
   .markdown-rendered a {
