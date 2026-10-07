@@ -1,10 +1,10 @@
 # cosmic
 
-A colorful, customizable theme for [Obsidian](https://obsidian.md), inspired by painted night skies.
+A colorful, customizable theme for [Obsidian](https://obsidian.md/), inspired by painted night skies.
 
 cosmic pairs deep, atmospheric surfaces with expressive color, readable typography, and coordinated light and dark modes. It includes seven color schemes, optional workspace atmospheres, and focused customization through the Style Settings plugin.
 
-![cosmic Theme Preview](./cosmic-screenshot.png)
+![cosmic theme preview](cosmic-screenshot.png)
 
 ## Features
 
@@ -22,11 +22,17 @@ cosmic pairs deep, atmospheric surfaces with expressive color, readable typograp
 
 cosmic does not require any companion plugins to function. The optional [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin unlocks the theme's built-in customization controls.
 
+## Technical Design
+
+cosmic is built as a standalone CSS theme that extends Obsidian's existing interface without requiring companion plugins. The theme uses reusable CSS custom properties and Obsidian's design tokens to coordinate seven color systems across light and dark modes.
+
+The stylesheet includes responsive layouts, print-specific styling, reduced-motion support, forced-colors accessibility handling, and optional Style Settings configuration. Custom CSS classes provide reusable per-note layouts without requiring changes to note content or application code.
+
 ## Installation
 
 ### Obsidian Community Themes
 
-Once cosmic is available in the Obsidian theme directory:
+cosmic is available through Obsidian's official Community Themes directory:
 
 1. Open **Settings > Appearance**
 2. Next to **Themes**, select **Manage**
