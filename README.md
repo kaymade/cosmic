@@ -228,8 +228,6 @@ If you encounter a problem, temporarily disable other CSS snippets before report
 
 Bug reports, feature requests, and pull requests are welcome through the project's [GitHub Issue Tracker](https://github.com/kaymade/cosmic/issues).
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for the reproduction details and visual checks that make reports and pull requests easier to review.
-
 When reporting a visual problem, please include:
 
 - Your Obsidian version
