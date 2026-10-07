@@ -1,10 +1,12 @@
-# cosmic
+# Cosmic for Obsidian
 
 A colorful, customizable theme for [Obsidian](https://obsidian.md/), inspired by painted night skies.
 
-cosmic pairs deep, atmospheric surfaces with expressive color, readable typography, and coordinated light and dark modes. It includes seven color schemes, optional workspace atmospheres, and focused customization through the Style Settings plugin.
+Cosmic pairs deep, atmospheric surfaces with expressive color, readable typography, and coordinated light and dark modes. It includes seven complete color schemes, optional workspace atmospheres, and focused customization through the Style Settings plugin.
 
-![cosmic theme preview](cosmic-screenshot.png)
+![Cosmic theme preview](cosmic-screenshot.png)
+
+[Install Cosmic from Obsidian](obsidian://show-theme?name=Cosmic)
 
 ## Features
 
@@ -15,6 +17,8 @@ cosmic pairs deep, atmospheric surfaces with expressive color, readable typograp
 - Customizable typography, note width, and interface density
 - Continuous, readable code blocks with colorful syntax highlighting
 - Styled tables, properties, callouts, embeds, Canvas, Graph, Bases, and PDF views
+- Colored highlights and grouped Bases/card views for current Obsidian releases
+- Styled editor focus, search, footnotes, media controls, outlines, backlinks, and bookmarks
 - Semantic alternate checkboxes
 - Optional per-note layouts for cards, images, tables, properties, and wide media
 - Print-friendly and reduced-motion styles
@@ -24,7 +28,7 @@ cosmic does not require any companion plugins to function. The optional [Style S
 
 ## Technical Design
 
-cosmic is built as a standalone CSS theme that extends Obsidian's existing interface without requiring companion plugins. The theme uses reusable CSS custom properties and Obsidian's design tokens to coordinate seven color systems across light and dark modes.
+Cosmic is built as a standalone CSS theme that extends Obsidian's existing interface without requiring companion plugins. The theme uses reusable CSS custom properties and Obsidian's design tokens to coordinate seven color systems across light and dark modes.
 
 The stylesheet includes responsive layouts, print-specific styling, reduced-motion support, forced-colors accessibility handling, and optional Style Settings configuration. Custom CSS classes provide reusable per-note layouts without requiring changes to note content or application code.
 
@@ -32,11 +36,11 @@ The stylesheet includes responsive layouts, print-specific styling, reduced-moti
 
 ### Obsidian Community Themes
 
-cosmic is available through Obsidian's official Community Themes directory:
+Cosmic is available in the Obsidian Community Themes directory:
 
 1. Open **Settings > Appearance**
 2. Next to **Themes**, select **Manage**
-3. Search for **cosmic**
+3. Search for **Cosmic**
 4. Select **Install and use**
 
 ### Manual Installation
@@ -65,7 +69,7 @@ To change palettes with Style Settings:
 
 1. Install and enable the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) community plugin
 2. Open **Settings > Style Settings**
-3. Expand **cosmic**
+3. Expand **Cosmic**
 4. Under **Colors and Moods**, select a **Color Scheme**
 
 Changing between Obsidian's light and dark appearance automatically activates the corresponding version of the selected palette.
@@ -84,7 +88,7 @@ The full list of cosmic's customizable options under Style Settings are as follo
 - Choose the main note font
 - Choose the display font used for titles and prominent headings
 
-cosmic's default typography uses:
+Cosmic's default typography uses:
 
 - **Yeseva One** for prominent headings
 - **Tirra** for note text
@@ -108,9 +112,9 @@ Choose a sidebar treatment:
 
 Choose a workspace background:
 
-- **Flat** for a plain workspace
-- **Nebula** for a palette-colored ambient glow
-- **Deep Space** for a darker background with stronger color and a vignette
+- **Flat** for a plain, uniform workspace
+- **Nebula** for broad, palette-colored clouds and ambient glow
+- **Deep Space** for a near-black star field with restrained color and a stronger vignette
 
 ### Finishing Touches
 
@@ -202,17 +206,19 @@ Multiple classes can be combined.
 | `cosmic-code-lines` | Adds line numbers in Live Preview |
 | `cosmic-code-compact` | Reduces code-block spacing |
 
-cosmic intentionally renders code blocks as one continuous container rather than styling each line as a separate rounded element.
+Cosmic intentionally renders code blocks as one continuous container rather than styling each line as a separate rounded element.
 
 ## Fonts
 
-cosmic loads its primary typefaces from Google Fonts and includes system-font fallbacks for situations where the web fonts are unavailable.
+Cosmic embeds its primary typefaces directly in `theme.css`, so its typography works offline without loading assets from the network.
+
+The bundled typefaces are Cormorant Garamond, IBM Plex Mono, Inter, Source Serif 4, Tirra, and Yeseva One. Copyright notices and license details are available in [FONT-LICENSES.md](./FONT-LICENSES.md).
 
 You can also override Obsidian's interface, text, or monospace fonts through Obsidian's built-in font settings.
 
 ## Compatibility
 
-cosmic requires Obsidian `1.5.0` or later.
+Cosmic requires Obsidian `1.5.0` or later and includes styling for current Obsidian features, including colored highlights and grouped Bases views.
 
 The theme includes adjustments for narrow screens, printing, reduced-motion preferences, and forced-colors accessibility mode. Because cosmic modifies many parts of Obsidian's interface, future Obsidian updates or unrelated CSS snippets may occasionally cause visual conflicts.
 
@@ -221,6 +227,8 @@ If you encounter a problem, temporarily disable other CSS snippets before report
 ## Feedback and contributing
 
 Bug reports, feature requests, and pull requests are welcome through the project's [GitHub Issue Tracker](https://github.com/kaymade/cosmic/issues).
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for the reproduction details and visual checks that make reports and pull requests easier to review.
 
 When reporting a visual problem, please include:
 
@@ -233,4 +241,4 @@ When reporting a visual problem, please include:
 
 ## License
 
-cosmic is available under the [MIT License](./LICENSE).
+Cosmic is available under the [MIT License](./LICENSE).
