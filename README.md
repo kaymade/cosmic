@@ -238,7 +238,7 @@ If you encounter a problem, temporarily disable other CSS snippets before report
 
 ## Feedback and contributing
 
-Bug reports, feature requests, and pull requests are welcome through the project's [GitHub Issue Tracker](https://github.com/kaymade/cosmic/issues).
+Bug reports, feature requests, and pull requests are all welcome through the project's [GitHub Issue Tracker](https://github.com/kaymade/cosmic/issues).
 
 When reporting a visual problem, please include:
 
@@ -248,6 +248,8 @@ When reporting a visual problem, please include:
 - The selected cosmic color scheme
 - A screenshot of the affected area
 - Any CSS snippets or appearance-related plugins that may be active
+
+For more intimate guidance on contributing to this project, please check out [contributing.md](contributing.md).
 
 ## License
 
