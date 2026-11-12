@@ -23,9 +23,9 @@ Please **ALWAYS** check the existing open issues first. If someone has already r
 Suggestions are not just welcome, but they are highly encouraged. If you have a suggestion that you would like to make, please do the following:
 
 1. Open an issue
-2. Describe what you'd like to see changed about *cosmic* and why
+2. Describe what you'd like to see changed about _cosmic_ and why
 
-*For large changes, start the discussion before writing code, so we can agree on the scope of the changes please.*
+_For large changes, start the discussion before writing code, so we can agree on the scope of the changes please._
 
 ## Opening a Pull Request
 
