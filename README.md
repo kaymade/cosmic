@@ -6,6 +6,8 @@ cosmic pairs deep, atmospheric surfaces with expressive color, readable typograp
 
 ![cosmic theme preview](cosmic-screenshot.png)
 
+![new cosmic theme preview](cosmic-1.2.0-release.png)
+
 [Install cosmic from Obsidian](obsidian://show-theme?name=Cosmic)
 
 ## Features
