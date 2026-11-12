@@ -36,7 +36,7 @@ If you are interested in tackling an open issue and creating a pull request, che
 - The theme still works in both dark and light mode
 - `manifest.json` remains valid JSON
 - Version numbers follow `x.y.z`
-- Changes preserve the overall Alice Velvet aesthetic
+- Changes preserve the overall **cosmic** aesthetic
 
 #### When opening a pull request, please:
 
