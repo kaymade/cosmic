@@ -1,23 +1,23 @@
-# Cosmic for Obsidian
+# cosmic for Obsidian
 
 A colorful, customizable theme for [Obsidian](https://obsidian.md/), inspired by painted night skies.
 
-Cosmic pairs deep, atmospheric surfaces with expressive color, readable typography, and coordinated light and dark modes. It includes seven complete color schemes, optional workspace atmospheres, and focused customization through the Style Settings plugin.
+cosmic pairs deep, atmospheric surfaces with expressive color, readable typography, and coordinated light and dark modes. It includes ten complete color schemes, optional workspace atmospheres, and focused customization through the Style Settings plugin.
 
-![Cosmic theme preview](cosmic-screenshot.png)
+![cosmic theme preview](cosmic-screenshot.png)
 
-[Install Cosmic from Obsidian](obsidian://show-theme?name=Cosmic)
+[Install cosmic from Obsidian](obsidian://show-theme?name=Cosmic)
 
 ## Features
 
 - Coordinated light and dark mode
-- Seven complete color schemes
+- Ten complete color schemes
 - Colorful headings and interface accents
 - Adjustable workspace backgrounds and sidebar contrast
 - Customizable typography, note width, and interface density
 - Continuous, readable code blocks with colorful syntax highlighting
 - Styled tables, properties, callouts, embeds, Canvas, Graph, Bases, and PDF views
-- Colored highlights and grouped Bases/card views for current Obsidian releases
+- Colored highlights and styled Bases tables, cards, and Kanban boards
 - Styled editor focus, search, footnotes, media controls, outlines, backlinks, and bookmarks
 - Semantic alternate checkboxes
 - Optional per-note layouts for cards, images, tables, properties, and wide media
@@ -28,7 +28,7 @@ cosmic does not require any companion plugins to function. The optional [Style S
 
 ## Technical Design
 
-Cosmic is built as a standalone CSS theme that extends Obsidian's existing interface without requiring companion plugins. The theme uses reusable CSS custom properties and Obsidian's design tokens to coordinate seven color systems across light and dark modes.
+cosmic is built as a standalone CSS theme that extends Obsidian's existing interface without requiring companion plugins. The theme uses reusable CSS custom properties and Obsidian's design tokens to coordinate ten color systems across light and dark modes.
 
 The stylesheet includes responsive layouts, print-specific styling, reduced-motion support, forced-colors accessibility handling, and optional Style Settings configuration. Custom CSS classes provide reusable per-note layouts without requiring changes to note content or application code.
 
@@ -36,11 +36,11 @@ The stylesheet includes responsive layouts, print-specific styling, reduced-moti
 
 ### Obsidian Community Themes
 
-Cosmic is available in the Obsidian Community Themes directory:
+cosmic is available in the Obsidian Community Themes directory:
 
 1. Open **Settings > Appearance**
 2. Next to **Themes**, select **Manage**
-3. Search for **Cosmic**
+3. Search for **cosmic**
 4. Select **Install and use**
 
 ### Manual Installation
@@ -63,13 +63,24 @@ Your theme directory should look like this:
 
 ## Color Schemes
 
-cosmic includes seven palettes. Every palette has separate colors designed for light and dark mode, respectively.
+cosmic includes ten unique palettes. Every palette has separate colors designed for light and dark mode, respectively.
+
+- **Original** — dusky indigo, soft rose, and a little lavender.
+- **Red Dwarf** — deep plum, bright berry pink, and pale blush.
+- **Blue Blob** — midnight blue, icy cyan, and a wash of sky blue.
+- **Aurora** — deep teal, glowing turquoise, and soft mint.
+- **Eclipse** — near-black violet, lilac accents, and pale lavender.
+- **Stardust** — warm amber, honey gold, and soft cream.
+- **Comet** — dark wine, bright coral, and soft petal pink.
+- **Dark Nebula** pairs blackened pine and moss with a pale sage light mode.
+- **Solar Flare** pairs smoked umber and copper with warm ivory and rust.
+- **Moonstone** pairs graphite and silver with chalk and slate.
 
 To change palettes with Style Settings:
 
 1. Install and enable the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) community plugin
 2. Open **Settings > Style Settings**
-3. Expand **Cosmic**
+3. Expand **cosmic**
 4. Under **Colors and Moods**, select a **Color Scheme**
 
 Changing between Obsidian's light and dark appearance automatically activates the corresponding version of the selected palette.
@@ -79,7 +90,8 @@ Changing between Obsidian's light and dark appearance automatically activates th
 The full list of cosmic's customizable options under Style Settings are as follows:
 
 ### Colors and Moods
-- Choose one of cosmic's seven color schemes (Original, Red Dwarf, Blue Blob, Aurora, Eclipse, Stardust, & Comet)
+
+- Choose one of cosmic's ten color schemes (Original, Red Dwarf, Blue Blob, Aurora, Eclipse, Stardust, Comet, Dark Nebula, Solar Flare, or Moonstone)
 - Change the primary accent and hover accent
 - Customize the colors used for H1, H2, and H3 headings
 
@@ -144,16 +156,16 @@ The active cosmic palette supplies the colors for these callouts.
 
 cosmic provides distinct colors and symbols for several semantic task states.
 
-| Syntax | Meaning |
-| --- | --- |
-| `- [ ]` | Incomplete |
-| `- [x]` | Complete |
+| Syntax  | Meaning     |
+| ------- | ----------- |
+| `- [ ]` | Incomplete  |
+| `- [x]` | Complete    |
 | `- [/]` | In progress |
-| `- [!]` | Important |
-| `- [?]` | Question |
-| `- [*]` | Star |
-| `- [>]` | Forwarded |
-| `- [-]` | Cancelled |
+| `- [!]` | Important   |
+| `- [?]` | Question    |
+| `- [*]` | Star        |
+| `- [>]` | Forwarded   |
+| `- [-]` | Cancelled   |
 | `- [i]` | Information |
 
 ## Per-note Layouts
@@ -173,40 +185,38 @@ Multiple classes can be combined.
 
 ### Content Layouts
 
-| CSS class | Effect |
-| --- | --- |
-| `cosmic-card-grid` | Arranges supported content blocks and callouts in a responsive card grid |
-| `cosmic-image-grid` | Arranges groups of images in a responsive gallery |
-| `cosmic-list-cards` | Turns a top-level list into a responsive card layout |
+| CSS class           | Effect                                                                            |
+| ------------------- | --------------------------------------------------------------------------------- |
+| `cosmic-card-grid`  | Arranges supported content blocks and callouts in a responsive card grid          |
+| `cosmic-image-grid` | Arranges groups of images in a responsive gallery                                 |
+| `cosmic-list-cards` | Turns a top-level list into a responsive card layout                              |
 | `cosmic-wide-media` | Allows images, videos, iframes, and embeds to extend beyond the normal note width |
 
 ### Properties
 
-| CSS class | Effect |
-| --- | --- |
-| `cosmic-properties-card` | Displays note properties in a card-style grid |
-| `cosmic-properties-compact` | Reduces property spacing |
-| `cosmic-properties-plain` | Removes the surrounding properties treatment |
+| CSS class                   | Effect                                        |
+| --------------------------- | --------------------------------------------- |
+| `cosmic-properties-card`    | Displays note properties in a card-style grid |
+| `cosmic-properties-compact` | Reduces property spacing                      |
+| `cosmic-properties-plain`   | Removes the surrounding properties treatment  |
 
 ### Tables
 
-| CSS class | Effect |
-| --- | --- |
-| `cosmic-table-compact` | Reduces table cell spacing |
-| `cosmic-table-center` | Centers the table and its cell content |
-| `cosmic-table-nowrap` | Prevents table-cell text from wrapping |
-| `cosmic-table-striped` | Adds alternating row backgrounds |
-| `cosmic-table-numbered` | Adds visible row numbers |
+| CSS class               | Effect                                 |
+| ----------------------- | -------------------------------------- |
+| `cosmic-table-compact`  | Reduces table cell spacing             |
+| `cosmic-table-center`   | Centers the table and its cell content |
+| `cosmic-table-nowrap`   | Prevents table-cell text from wrapping |
+| `cosmic-table-striped`  | Adds alternating row backgrounds       |
+| `cosmic-table-numbered` | Adds visible row numbers               |
 
 ### Code Blocks
 
-| CSS class | Effect |
-| --- | --- |
-| `cosmic-code-nowrap` | Prevents code lines from wrapping |
-| `cosmic-code-lines` | Adds line numbers in Live Preview |
-| `cosmic-code-compact` | Reduces code-block spacing |
-
-Cosmic intentionally renders code blocks as one continuous container rather than styling each line as a separate rounded element.
+| CSS class             | Effect                            |
+| --------------------- | --------------------------------- |
+| `cosmic-code-nowrap`  | Prevents code lines from wrapping |
+| `cosmic-code-lines`   | Adds line numbers in Live Preview |
+| `cosmic-code-compact` | Reduces code-block spacing        |
 
 ## Fonts
 
@@ -218,7 +228,7 @@ You can also override Obsidian's interface, text, or monospace fonts through Obs
 
 ## Compatibility
 
-Cosmic requires Obsidian `1.5.0` or later and includes styling for current Obsidian features, including colored highlights and grouped Bases views.
+cosmic 1.2.0 requires Obsidian `1.15.0` or later and includes styling for colored highlights and Bases Kanban.
 
 The theme includes adjustments for narrow screens, printing, reduced-motion preferences, and forced-colors accessibility mode. Because cosmic modifies many parts of Obsidian's interface, future Obsidian updates or unrelated CSS snippets may occasionally cause visual conflicts.
 
@@ -239,4 +249,4 @@ When reporting a visual problem, please include:
 
 ## License
 
-Cosmic is available under the [MIT License](./LICENSE).
+cosmic is available under the [MIT License](./LICENSE).
