@@ -2436,6 +2436,11 @@ body:is(
   background-color: transparent !important;
 }
 
+/* The mobile navbar must still appear over the main container */
+.mobile-navbar {
+  z-index: 2;
+}
+
 body.cosmic-atmosphere-flat {
   --cosmic-pane-glow-dark: 0%;
   --cosmic-pane-highlight-dark: 0%;
