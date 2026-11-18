@@ -2296,6 +2296,7 @@ body.cosmic-scheme-moonstone.theme-dark {
   );
   --cosmic-accent: #a8c6e4;
   --cosmic-accent-hover: #d1e3f4;
+  --active-line-bg: color-mix(in srgb, var(--cosmic-accent) 4%, transparent);
   --cosmic-h1-color: #d7e0eb;
   --cosmic-h2-color: #b9bcd9;
   --cosmic-h3-color: #b9bcd9;
@@ -2727,6 +2728,12 @@ body.cosmic-atmosphere-deep .workspace::before {
   background-color: var(--active-line-bg);
 }
 
+body.cosmic-scheme-moonstone.theme-dark
+  .markdown-source-view.mod-cm6
+  .HyperMD-codeblock-bg:is(.cm-active, .cm-activeLine) {
+  background-color: var(--code-background);
+}
+
 .markdown-source-view.mod-cm6 :is(.HyperMD-frontmatter, .cm-hmd-frontmatter) {
   color: var(--text-muted);
   background-color: color-mix(
@@ -2858,6 +2865,10 @@ body.cosmic-atmosphere-deep .workspace::before {
 .cm-s-obsidian .HyperMD-codeblock :is(.cm-tag, .cm-bracket),
 .markdown-rendered pre :is(.token.tag, .token.selector) {
   color: var(--code-tag);
+}
+
+.markdown-rendered pre .token.tag > .token.punctuation {
+  color: inherit;
 }
 
 .cm-s-obsidian .HyperMD-codeblock :is(.cm-comment, .cm-meta),
