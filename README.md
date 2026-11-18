@@ -254,3 +254,15 @@ For more intimate guidance on contributing to this project, please check out [co
 ## License
 
 cosmic is available under the [MIT License](./LICENSE).
+
+
+
+
+## made sweeter by you <3
+
+i just want to say a huge thank you to anyone and everyone who decides to contribute to this project in any form or fashion. i am immensly grateful for every fix and every piece of feedback. 
+
+- kay s. h. (@kaymade) <33
+
+### the cool beans!!!
+- @00dani - thank you so much for fixing the mobile navigation bar with pr #1. so happy to have cosmic's first official community contribution!
